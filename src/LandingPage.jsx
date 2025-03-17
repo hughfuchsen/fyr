@@ -7,14 +7,28 @@ export default function LandingPage() {
   const [showArtists, setShowArtists] = useState(false);
   const backgroundRef = useRef(null); // Reference for background image
   const artistSectionRef = useRef(null);
+  const enterButtonRef = useRef(null);
 
   useEffect(() => {
     const handleEnterSite = () => {
-      if (window.scrollY > 200) {
-        setShowArtists(true);
-      } else if (window.scrollY === 0) {
-        setShowArtists(false);
+      console.log(window.scrollY);
+      if (window.innerWidth >= 1200)
+      {
+        if (window.scrollY > (window.innerHeight*0.8)) {
+          setShowArtists(true);
+        } else if (window.scrollY < 100) {
+          setShowArtists(false);
+        }
       }
+      else
+      {
+        if (window.scrollY > 200) {
+          setShowArtists(true);
+        } else if (window.scrollY < 100) {
+          setShowArtists(false);
+        }
+      }
+
     };
 
     window.addEventListener("scroll", handleEnterSite, { passive: true });
@@ -26,7 +40,7 @@ export default function LandingPage() {
   useEffect(() => {
     if (window.innerWidth >= 1200 && backgroundRef.current) {
       window.scrollTo({
-        top: backgroundRef.current.offsetHeight - window.innerHeight,
+        top: backgroundRef.current.offsetHeight - (window.innerHeight+ 50),
         behavior: "smooth",
       });
     }
@@ -53,9 +67,11 @@ export default function LandingPage() {
           alt="Background Image"
         />
         <motion.div
+          ref={enterButtonRef}
           animate={{ y: [5, -5, 5] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
           className="enter-site-button"
+          style={showArtists ? {display: "none"} : {display: "inline-block"}}
           onClick={handleScrollToArtists}
         >
           ↓ Artists/Enter ↓
@@ -78,7 +94,7 @@ export default function LandingPage() {
                 alt={artist.name}
                 className="artist-image"
               />
-              <h3>{artist.name}</h3>
+              <h5>{artist.name}</h5>
               <p>{artist.description}</p>
             </motion.div>
           ))}
