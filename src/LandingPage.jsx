@@ -3,11 +3,9 @@ import { motion } from "framer-motion";
 import "./LandingPage.css";
 import artists from './artists.js';
 
-
 export default function LandingPage() {
   const [showArtists, setShowArtists] = useState(false);
-
-  // Reference for the section you want to scroll to
+  const backgroundRef = useRef(null); // Reference for background image
   const artistSectionRef = useRef(null);
 
   useEffect(() => {
@@ -18,19 +16,29 @@ export default function LandingPage() {
         setShowArtists(false);
       }
     };
-  
+
     window.addEventListener("scroll", handleEnterSite, { passive: true });
-  
+
     return () => window.removeEventListener("scroll", handleEnterSite);
   }, []);
+
+  // Auto-scroll to the bottom of the background image on page load (desktop only)
+  useEffect(() => {
+    if (window.innerWidth >= 1200 && backgroundRef.current) {
+      window.scrollTo({
+        top: backgroundRef.current.offsetHeight - window.innerHeight,
+        behavior: "smooth",
+      });
+    }
+  }, []); // Runs once on mount
 
   // Function to handle scrolling to the artist section
   const handleScrollToArtists = () => {
     if (artistSectionRef.current) {
       artistSectionRef.current.scrollIntoView({
-        behavior: "smooth", // Smooth scroll effect
-        block: "start",     // Aligns the target div at the top of the screen
-        inline: "nearest",  // Ensures it doesn't scroll horizontally
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
       });
     }
   };
@@ -38,20 +46,17 @@ export default function LandingPage() {
   return (
     <>
       {/* Hero Section */}
-      <div
-        className="landing-page-container"
-        // style={{ backgroundImage: "url('/background_image_fyr.jpg')" }}
-      >
+      <div className="landing-page-container" ref={backgroundRef}>
         <img
-         className="background-image"
-         src="/background_image_fyr.jpg" 
-         alt="Background Image" 
+          className="background-image"
+          src="/background_image_fyr.jpg"
+          alt="Background Image"
         />
         <motion.div
           animate={{ y: [5, -5, 5] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
           className="enter-site-button"
-          onClick={handleScrollToArtists}  // Add the click handler here
+          onClick={handleScrollToArtists}
         >
           ↓ Artists/Enter ↓
         </motion.div>

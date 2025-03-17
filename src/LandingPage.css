@@ -1,8 +1,9 @@
 /* Custom Styles */
 .landing-page-container {
     position: relative;
+    height: 100%;
+    min-height: auto;  
     width: 100%;
-    height: 100vh; /* Full screen height */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -11,6 +12,7 @@
 }
 
 .background-image {
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image covers the container */
@@ -28,6 +30,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
 }
 
 .enter-site-button:hover {
@@ -40,17 +44,24 @@
     width: 80%;
     margin: 0 auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 10rem;
+    justify-content: center; /* Ensure grid aligns center */
 }
 
+/* Artist Block */
 .artist-block {
     text-align: center;
-    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    /* margin: 2rem auto;  */
+    /* padding: 2rem; */
     width: 100%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .artist-image {
@@ -61,57 +72,45 @@
 
 /* Large Tablets (Max Width 1200px) */
 @media (max-width: 1200px) {
+    .landing-page-container {
+        height: 100%;
+        min-height: auto;        
+        /* padding: 5rem 0; */
+    }
+
+
     .artist-container {
         grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 5rem;
+        /* gap: 10rem; */
     }
 }
 
 /* Small Tablets & Large Phones (Max Width 900px) */
 @media (max-width: 900px) {
+    .landing-page-container {
+        height: 100%;
+        min-height: auto;        
+        /* padding: 5rem 0; */
+    }
+
     .artist-container {
         grid-template-columns: repeat(1, 1fr); /* 1 column */
         gap: 3rem;
     }
 
-    .landing-page-container {
-        height: auto;
-        padding: 5rem 0;
+    .enter-site-button {
+        bottom: -60px;   
     }
 
-    .enter-site-button {
-        bottom: 15px; /* Adjust button position */
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
 }
 
 /* Small Phones (Max Width 700px) */
 @media (max-width: 700px) {
     .artist-container {
-        width: 90%;
+        width: 85%;
     }
 
     .enter-site-button {
-        bottom: 10px;
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Very Small Phones (Max Width 500px) */
-@media (max-width: 500px) {
-    .artist-container {
-        width: 95%;
-    }
-
-    .artist-block {
-        font-size: 1.2rem;
-    }
-
-    .enter-site-button {
-        bottom: 5px;
-        padding: 6px 12px;
-        font-size: 0.85rem;
+        /* font-size: 0.9rem; */
     }
 }
