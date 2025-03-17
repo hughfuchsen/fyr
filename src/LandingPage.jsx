@@ -39,12 +39,14 @@ export default function LandingPage() {
   // Auto-scroll to the bottom of the background image on page load (desktop only)
   useEffect(() => {
     if (window.innerWidth >= 1200 && backgroundRef.current) {
-      window.scrollTo({
-        top: backgroundRef.current.offsetHeight - (window.innerHeight+ 50),
-        behavior: "smooth",
-      });
+      setTimeout(() => {
+        window.scrollTo({
+          top: backgroundRef.current.offsetHeight - (window.innerHeight + 25),
+          behavior: "smooth",
+        });
+      }, 100); // Small delay to ensure rendering is complete
     }
-  }, []); // Runs once on mount
+  }, []);
 
   // Function to handle scrolling to the artist section
   const handleScrollToArtists = () => {
@@ -68,10 +70,10 @@ export default function LandingPage() {
         />
         <motion.div
           ref={enterButtonRef}
-          animate={{ y: [5, -5, 5] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
+          style={showArtists ? {cursor: "default"} : {display: "inline-block", cursor: "pointer"}}
+          animate={showArtists ? {opacity: 0} : { opacity: 0.9, y: [5, -5, 5] }}
+          transition={showArtists ? {repeat: 0,  duration: 0.5 } : { repeat: 0, duration: 0.5 }}
           className="enter-site-button"
-          style={showArtists ? {display: "none"} : {display: "inline-block"}}
           onClick={handleScrollToArtists}
         >
           ↓ Artists/Enter ↓
