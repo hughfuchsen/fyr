@@ -4,10 +4,15 @@ import "./LandingPage.css";
 import artists from './artists.js';
 
 export default function LandingPage() {
-  const [showArtists, setShowArtists] = useState(false);
+  const [showArtistImgs, setShowArtistImgs] = useState(false);
+  
   const backgroundRef = useRef(null); // Reference for background image
   const artistSectionRef = useRef(null);
   const enterButtonRef = useRef(null);
+
+  
+  const [hoveredArtistIndex, setHoveredArtistIndex] = useState(null);
+  
 
   useEffect(() => {
     const handleEnterSite = () => {
@@ -15,17 +20,17 @@ export default function LandingPage() {
       if (window.innerWidth >= 1200)
       {
         if (window.scrollY > (window.innerHeight*0.8)) {
-          setShowArtists(true);
+          setShowArtistImgs(true);
         } else if (window.scrollY < 100) {
-          setShowArtists(false);
+          setShowArtistImgs(false);
         }
       }
       else
       {
         if (window.scrollY > 200) {
-          setShowArtists(true);
+          setShowArtistImgs(true);
         } else if (window.scrollY < 100) {
-          setShowArtists(false);
+          setShowArtistImgs(false);
         }
       }
 
@@ -70,13 +75,13 @@ export default function LandingPage() {
         />
         <motion.div
           ref={enterButtonRef}
-          style={showArtists ? {cursor: "default"} : {display: "inline-block", cursor: "pointer"}}
-          animate={showArtists ? {opacity: 0} : { opacity: 0.9, y: [5, -5, 5] }}
-          transition={showArtists ? {repeat: 0,  duration: 0.5 } : { repeat: 0, duration: 0.5 }}
+          style={showArtistImgs ? {cursor: "default"} : {display: "inline-block", cursor: "pointer"}}
+          animate={showArtistImgs ? {opacity: 0} : { opacity: 0.9, y: [5, -5, 5] }}
+          transition={showArtistImgs ? {repeat: 0,  duration: 0.5 } : { repeat: 0, duration: 0.5 }}
           className="enter-site-button"
           onClick={handleScrollToArtists}
         >
-          ↓ Artists/Enter ↓
+          ↓ Artists ↓
         </motion.div>
       </div>
 
@@ -87,18 +92,32 @@ export default function LandingPage() {
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
-              animate={showArtists ? { opacity: 1, scale: 1 } : {}}
+              animate={showArtistImgs ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="artist-block"
+              onMouseOver={() => setHoveredArtistIndex(index)}
+              onMouseLeave={() => setHoveredArtistIndex(null)}
+              style={{ position: "relative" }} // Ensure positioning for text overlay
             >
               <img
                 src={artist.image}
                 alt={artist.name}
                 className="artist-image"
               />
-              <h5>{artist.name}</h5>
+              
+              {/* Artist name overlay */}
+              <motion.h5 
+                className="artist-text"
+                style={{ display: hoveredArtistIndex === index ? "block" : "none",}}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: hoveredArtistIndex === index ? 1 : 0 }}
+                transition={{ duration: 0.3 }} // Smooth fade-in/out effect
+              >
+                {artist.name}
+              </motion.h5>
               <p>{artist.description}</p>
             </motion.div>
+
           ))}
         </div>
       </div>
