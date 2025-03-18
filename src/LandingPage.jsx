@@ -38,7 +38,7 @@ export default function LandingPage() {
 
   // Auto-scroll to the bottom of the background image on page load (desktop only)
   useEffect(() => {
-    if (window.innerWidth >= 1200 && backgroundRef.current) {
+    if (backgroundRef.current) {
       setTimeout(() => {
         window.scrollTo({
           top: backgroundRef.current.offsetHeight - (window.innerHeight + 25),
