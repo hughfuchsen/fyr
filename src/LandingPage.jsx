@@ -44,7 +44,7 @@ export default function LandingPage() {
           top: backgroundRef.current.offsetHeight - (window.innerHeight + 25),
           behavior: "smooth",
         });
-      }, 100); // Small delay to ensure rendering is complete
+      }, 200); // Small delay to ensure rendering is complete
     }
   }, []);
 
