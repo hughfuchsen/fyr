@@ -50,8 +50,8 @@ export default function LandingPage() {
 
   // Function to handle scrolling to the artist section
   const handleScrollToArtists = () => {
-    if (artistSectionRef.current) {
-      artistSectionRef.current.scrollIntoView({
+    if (enterButtonRef.current) {
+      enterButtonRef.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest",
