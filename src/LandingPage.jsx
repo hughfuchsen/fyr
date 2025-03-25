@@ -54,7 +54,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <div className="landing-page-container" ref={backgroundRef}>
         <img className="background-image" src={backgroundImage} alt="Background" 
-          style={{ marginTop: addMarginTop ? "7em" : "0" }}
+          style={{ marginTop: addMarginTop ? "6em" : "0" }}
         />
         <motion.div
           ref={enterButtonRef}
