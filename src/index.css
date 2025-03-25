@@ -123,7 +123,7 @@ img{
 .expanded-artist-modal {
   position: fixed;
   width: 60%;
-  max-height: 95%;
+  max-height: 80%;
   max-width: 600px; /* Prevents it from getting too wide */
   max-height: 90vh; /* Limits height relative to viewport */
   overflow: auto; /* Enables scrolling if content overflows */
