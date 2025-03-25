@@ -119,15 +119,14 @@ img{
   z-index: -1; /* Keeps it behind other content */
 }
 
-
 .expanded-artist-modal {
   position: fixed;
   width: 60%;
-  max-height: 80vh;
   max-width: 600px; /* Prevents it from getting too wide */
+  max-height: 90vh; /* Limits height relative to viewport */
   overflow: auto; /* Enables scrolling if content overflows */
-  padding: 3rem; /* Reduce padding for more content space */
-  color: #003563;
+  padding: 1rem; /* Reduce padding for more content space */
+  background: #003563;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,12 +155,20 @@ img{
 }
 
 .expanded-artist-modal img {
+  max-width: 80%;
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40vh; /* Ensures it doesn’t push text out */
+  object-fit: contain;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 .expanded-artist-modal p {
-  font-size: clamp(0.5rem, 4vw, 1rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem); /* Scales safely */
+  max-width: 90%; /* Prevents it from stretching too wide */
+  word-wrap: break-word; /* Ensures long words don't break layout */
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 
