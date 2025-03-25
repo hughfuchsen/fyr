@@ -4,6 +4,14 @@ import artists from "./artists";
 const ArtistGrid = () => {
     const [selectedArtist, setSelectedArtist] = useState(null);
     const modalRef = useRef(null);
+    const [isBoxTemplateLoaded, setIsBoxTemplateLoaded] = useState(false);
+
+    // Preload box-template image
+    useEffect(() => {
+        const img = new Image();
+        img.src = "/box_template.jpg";
+        img.onload = () => setIsBoxTemplateLoaded(true);
+    }, []);
 
     const handleArtistClick = (artist) => {
         setSelectedArtist(artist);
@@ -52,33 +60,34 @@ const ArtistGrid = () => {
             {selectedArtist && (
                 <div className="expanded-artist-overlay">
                     <div ref={modalRef} className="expanded-artist-modal">
-                        <img src="/box_template.jpg" className="box-template" alt="Background"/>
-                            <div style={{ 
-                                    margin: "0 auto"  
-                                }} >
-                                <button onClick={handleClose} className="close-button">×</button>
-                                <p style={{fontSize: "1.3rem"}} >{selectedArtist.name}</p>
+                        {/* Only render the box-template when it's preloaded */}
+                        {isBoxTemplateLoaded && (
+                            <img src="/box_template.jpg" className="box-template" alt="Background"/>
+                        )}
+                        <div style={{ margin: "0 auto" }}>
+                            <button onClick={handleClose} className="close-button">×</button>
+                            <p style={{fontSize: "1.3rem"}} >{selectedArtist.name}</p>
 
-                                <img 
+                            <img 
                                 style={{ 
                                     maxWidth: "60%",  
                                     objectFit: "contain",  
-                                    display: "inline-block", /* Ensures inline centering */
+                                    display: "inline-block",
                                     margin: "0 auto"  
                                 }} 
                                 src={selectedArtist.image} 
                                 alt={selectedArtist.name} 
-                                />
+                            />
 
-                                <p>{selectedArtist.bio}</p>
+                            <p>{selectedArtist.bio}</p>
 
-                                <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
-                                    Website
-                                </a>
-                                <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
-                                    Merch
-                                </a>
-                            </div>
+                            <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
+                                Website
+                            </a>
+                            <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
+                                Merch
+                            </a>
+                        </div>
                     </div>
                 </div>
             )}
