@@ -61,7 +61,7 @@ const ArtistGrid = () => {
 
                                 <img 
                                 style={{ 
-                                    maxWidth: "80%", 
+                                    maxWidth: "80%",  
                                     objectFit: "contain",  
                                     display: "inline-block", /* Ensures inline centering */
                                     margin: "0 auto"  
