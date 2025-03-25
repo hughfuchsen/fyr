@@ -64,8 +64,8 @@ export default function LandingPage() {
           ↓ Artists ↓
         </motion.div>
       </div>
-      <br /><br />
-      <hr />
+
+      <hr style={{ marginTop: addMarginTop ? "6em" : "0" }} />
       {/* Artists Section */}
       <ArtistGrid setExpandedArtist={setExpandedArtist} />
     </>
