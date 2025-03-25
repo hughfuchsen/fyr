@@ -12,23 +12,19 @@ export default function LandingPage() {
 
   // Handle responsive background image
   useEffect(() => {
+    if (typeof window === "undefined") return;
+  
     const handleResize = () => {
-      if (window.innerWidth < 460) {
-        setBackgroundImage("/background_image_fyr3.jpg"); // Change to your mobile image path
-        setAddMarginTop(true); // Change the amount of br's at the top
-      } else {
-        setBackgroundImage("/background_image_fyr.jpg");
-        setAddMarginTop(false); 
-      }
+      setBackgroundImage(window.innerWidth < 460 ? "/background_image_fyr3.jpg" : "/background_image_fyr.jpg");
+      setAddMarginTop(window.innerWidth < 460);
     };
-
-    handleResize(); // Call once to set the initial state
+  
+    handleResize();
     window.addEventListener("resize", handleResize);
-    
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+  
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+  
 
   // Handle scrolling on load
   useEffect(() => {
