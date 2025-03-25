@@ -152,7 +152,7 @@ img{
 }
 
 .expanded-artist-modal h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem); /* Between 1.5rem and 3rem, scaling with viewport */
+  font-size: clamp(0.8rem, 4vw, 1.5rem); /* Between 1.5rem and 3rem, scaling with viewport */
   margin-bottom: 1rem;
 }
 
