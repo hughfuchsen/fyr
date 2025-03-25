@@ -133,6 +133,7 @@ img{
   align-items: center;
   justify-content: center;
 }
+
 .close-button {
   position: absolute;
   top: 10px;
@@ -169,17 +170,17 @@ img{
 .expanded-artist-modal a {
   display: inline-block;
   margin: 10px auto;
-  margin-bottom: 1rem;
-  background: #ff6b6b;
+  margin-inline: 3rem;
+  padding: 5px;
+  background: rgb(197, 36, 0, 0.8);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
 .expanded-artist-modal a:hover {
-  background: #ff3b3b;
+  background: rgb(197, 36, 0, 1);
 }
 
 .artist-image {
