@@ -74,10 +74,16 @@ img{
   cursor: pointer;
   transition: background-color 0.6s ease;
   /* border: solid 2px #8c1a01; */
-  background-color: #e3ddc5;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
-  border-radius: 2px;
+
+
+  border: solid 1px white;
+  color: white;
+  background-color: rgb(150, 18, 18, 0.1);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-size: clamp(0.5rem, 4vw, 0.8rem); /* Between 1.5rem and 3rem, scaling with viewport */
 }
 
 .enter-site-button:hover {
@@ -100,7 +106,6 @@ img{
 .artist-block {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
   width: 100%;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
@@ -198,7 +203,6 @@ img{
   color: #961212;
   border-radius: 3px;
   text-decoration: none;
-  font-weight: bold;
   transition: background 0.3s ease;
   font-size: clamp(0.5rem, 4vw, 0.8rem); /* Between 1.5rem and 3rem, scaling with viewport */
 
@@ -265,7 +269,14 @@ img{
 
   .enter-site-button {
       bottom: -55px; 
-      display: grid;  
+      display: grid; 
+      border: solid 1px #961212;
+      color:#961212;
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      font-size: clamp(0.5rem, 4vw, 0.8rem); /* Between 1.5rem and 3rem, scaling with viewport */
   }
 
   .expanded-artist-modal {
