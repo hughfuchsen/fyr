@@ -89,8 +89,8 @@ img{
 .artist-container {
   width: 80%;
   margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 5em;
+  margin-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   gap: 10rem;
