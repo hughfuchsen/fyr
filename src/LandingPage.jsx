@@ -18,6 +18,7 @@ export default function LandingPage() {
         setAddMarginTop(true); // Change the amount of br's at the top
       } else {
         setBackgroundImage("/background_image_fyr.jpg");
+        setAddMarginTop(false); 
       }
     };
 
