@@ -1,12 +1,18 @@
 
+* {
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Increases space between letters */
+  word-spacing: 3px; /* Increases space between words */
+  line-height: 2; /* Increases space between lines */
+}
+
 
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: monospace;
-  color: #003563;
+  font-family: "Varela Round", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
@@ -94,7 +100,6 @@ img{
 }
 
 /* Expanded Artist Block */
-
 
 .expanded-artist-overlay {
   position: fixed;
@@ -255,4 +260,17 @@ img{
       /* font-size: 0.9rem; */
   }
 }
+/* Tiny Phones (Max Width 380px) */
+@media (max-width: 380px) {
+  .artist-container {
+      width: 85%;
+  }
 
+  .expanded-artist-modal p {
+    font-size: 10px;
+  }
+  .expanded-artist-modal a {
+    font-size: 8px;
+    padding: 6px;
+  }
+}

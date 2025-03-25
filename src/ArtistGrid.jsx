@@ -57,11 +57,11 @@ const ArtistGrid = () => {
                                     margin: "0 auto"  
                                 }} >
                                 <button onClick={handleClose} className="close-button">×</button>
-                                <h2>{selectedArtist.name}</h2>
+                                <p style={{fontSize: "1.3rem"}} >{selectedArtist.name}</p>
 
                                 <img 
                                 style={{ 
-                                    maxWidth: "30%",  
+                                    maxWidth: "60%",  
                                     objectFit: "contain",  
                                     display: "inline-block", /* Ensures inline centering */
                                     margin: "0 auto"  
