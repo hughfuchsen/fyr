@@ -60,7 +60,8 @@ export default function LandingPage() {
           ↓ Artists ↓
         </motion.div>
       </div>
-
+      <br /><br />
+      <hr />
       {/* Artists Section */}
       <ArtistGrid setExpandedArtist={setExpandedArtist} />
     </>

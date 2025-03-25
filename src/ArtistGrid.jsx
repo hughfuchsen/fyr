@@ -53,7 +53,7 @@ const ArtistGrid = () => {
                     onClick={() => handleArtistClick(artist)}
                 >
                     <img src={artist.image} alt={artist.name} className="artist-image"  />
-                    <p>{artist.name}</p>
+                    <p style={{fontSize:"16px"}} >{artist.name}</p>
                 </div>
             ))}
 
