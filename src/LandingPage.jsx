@@ -37,6 +37,7 @@ export default function LandingPage() {
           top: backgroundRef.current.offsetHeight - (window.innerHeight + 25),
           behavior: "smooth",
         });
+        handleResize();
       }, 200);
     }
   }, []);
