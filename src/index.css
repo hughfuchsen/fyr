@@ -112,7 +112,7 @@ img{
 
 .expanded-artist-modal {
   position: fixed;
-  width: 60%;
+  width: 80%;
   max-height: 80vh;
   max-width: 600px; /* Prevents it from getting too wide */
   padding: 1.5rem; /* Reduce padding for more content space */

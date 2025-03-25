@@ -61,7 +61,7 @@ const ArtistGrid = () => {
 
                                 <img 
                                 style={{ 
-                                    maxWidth: "80%",  
+                                    maxWidth: "30%",  
                                     objectFit: "contain",  
                                     display: "inline-block", /* Ensures inline centering */
                                     margin: "0 auto"  
@@ -71,7 +71,7 @@ const ArtistGrid = () => {
                                 />
 
                                 <p>{selectedArtist.bio}</p>
-                                
+
                                 <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
                                     Website
                                 </a>
