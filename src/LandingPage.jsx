@@ -5,6 +5,7 @@ import ArtistGrid from "./ArtistGrid";
 export default function LandingPage() {
   const [expandedArtist, setExpandedArtist] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState("/background_image_fyr.jpg");
+  const [addMarginTop, setAddMarginTop] = useState(false);
 
   const backgroundRef = useRef(null);
   const enterButtonRef = useRef(null);
@@ -12,8 +13,9 @@ export default function LandingPage() {
   // Handle responsive background image
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 900) {
+      if (window.innerWidth < 460) {
         setBackgroundImage("/background_image_fyr3.jpg"); // Change to your mobile image path
+        setAddMarginTop(true); // Change the amount of br's at the top
       } else {
         setBackgroundImage("/background_image_fyr.jpg");
       }
@@ -51,7 +53,9 @@ export default function LandingPage() {
     <>
       {/* Hero Section */}
       <div className="landing-page-container" ref={backgroundRef}>
-        <img className="background-image" src={backgroundImage} alt="Background" />
+        <img className="background-image" src={backgroundImage} alt="Background" 
+          style={{ marginTop: addMarginTop ? "7em" : "0" }}
+        />
         <motion.div
           ref={enterButtonRef}
           className="enter-site-button"
