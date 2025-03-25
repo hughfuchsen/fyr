@@ -33,7 +33,6 @@ export default function LandingPage() {
   useEffect(() => {
     if (backgroundRef.current) {
       setTimeout(() => {
-        handleResize();
         window.scrollTo({
           top: backgroundRef.current.offsetHeight - (window.innerHeight + 25),
           behavior: "smooth",
