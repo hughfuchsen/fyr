@@ -12,7 +12,7 @@ export default function LandingPage() {
   // Handle responsive background image
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1200) {
+      if (window.innerWidth < 900) {
         setBackgroundImage("/background_image_fyr3.jpg"); // Change to your mobile image path
       } else {
         setBackgroundImage("/background_image_fyr.jpg");
