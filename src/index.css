@@ -25,13 +25,14 @@ body {
 }
 
 
+
 hr{
   color: #0e273e;
   height: 0.5px; /* Thickness of the line */
   background-color: black;
   margin-left: 10%;
   margin-right: 10%;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 code {
