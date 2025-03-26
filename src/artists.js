@@ -3,7 +3,7 @@ const artists = [
       name: "Darren Hanlon",
       image: "/artist_image_wireframe.jpg",
       description: "Once played tambourine for Darren Hanlon... uninvited.",
-      bio: "Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’",
+      bio: "T ried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’",
       link: "https://artist1website.com"
   },
   {
