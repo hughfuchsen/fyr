@@ -221,6 +221,12 @@ img{
   width: 100%;
 }
 
+.performance-line-1{
+  display: block;
+  opacity: 0;
+  margin: 0 auto;
+}
+
 
 /* Responsive Design */
 
@@ -288,7 +294,11 @@ img{
     height: 100%;
   }
   
-
+  .performance-line-1{
+    display: block;
+    margin: 0 auto;
+  }
+  
 }
 
 /* Small Phones (Max Width 700px) */
@@ -297,11 +307,32 @@ img{
       width: 85%;
   }
 
-  .enter-site-button {
-      /* font-size: 0.9rem; */
-  }
 }
-/* Tiny Phones (Max Width 380px) */
+
+
+
+@media (max-width: 460px) {
+  .artist-container {
+      width: 85%;
+  }
+
+  .performance-line-1{
+    display: block;
+    opacity: 1;
+    margin-top: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .landing-page-container {
+    margin-top: 5em;
+}
+  
+}
+
+
+
+/* Tiny Phones (Max Width 460px) */
 @media (max-width: 380px) {
   .artist-container {
       width: 85%;
