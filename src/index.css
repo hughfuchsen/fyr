@@ -27,7 +27,7 @@ body {
 
 hr{
   color: #0e273e;
-  height: 1px; /* Thickness of the line */
+  height: 0.5px; /* Thickness of the line */
   background-color: black;
   margin-left: 10%;
   margin-right: 10%;
