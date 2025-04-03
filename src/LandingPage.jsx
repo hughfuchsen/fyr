@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import ArtistGrid from "./ArtistGrid";
+import Footer from "./Footer";
 
 export default function LandingPage() {
   const [expandedArtist, setExpandedArtist] = useState(null);
@@ -14,7 +15,7 @@ export default function LandingPage() {
     if (typeof window === "undefined") return;
   
     const handleResize = () => {
-      setBackgroundImage(window.innerWidth < 460 ? "/background_image_fyr3.jpg" : "/background_image_fyr.jpg");
+      setBackgroundImage(window.innerWidth < 460 ? "/background_image_fyr3.jpg" : "/reworkingFlippinYeahSign.jpg");
     };
   
     handleResize();
@@ -49,18 +50,23 @@ export default function LandingPage() {
       {/* Hero Section */}
       <div className="landing-page-container" ref={backgroundRef}>
         <img className="background-image" src={backgroundImage} alt="Background" />
-        <motion.div
+        {/* <motion.div
           ref={enterButtonRef}
           className="enter-site-button"
           onClick={() => lineRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
         >
           ↓ Artists ↓
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <hr className="performance-line-1" ref={lineRef}/>
       {/* Artists Section */}
+      <p
+            style={{fontSize:"1.5em", textAlign: "center", display: "block"}}
+                >ARTISTS</p>
       <ArtistGrid setExpandedArtist={setExpandedArtist} />
+      <Footer/>
     </>
+
   );
 }

@@ -45,6 +45,7 @@ const ArtistGrid = () => {
     }, []);
 
     return (
+        
         <div className="artist-container">
             {artists.map((artist, index) => (
                 <div 

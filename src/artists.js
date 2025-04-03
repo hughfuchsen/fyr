@@ -1,14 +1,14 @@
 const artists = [
   {
-      name: "Darren Hanlon",
-      image: "/artist_image_wireframe.jpg",
+      name: "Darren Hanlon Hello",
+      image: "/darren.jpg",
       description: "Once played tambourine for Darren Hanlon... uninvited.",
       bio: "T ried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’",
       link: "https://artist1website.com"
   },
   {
       name: "Shelley Short",
-      image: "/artist_image_wireframe.jpg",
+      image: "/shelley.jpg",
       description: "Claims to have ghostwritten 'Falling Aeroplanes.'",
       bio: "Believes Hanlon’s lyrics hide clues to a treasure hunt. Has visited every location mentioned in his songs, only to find an old bus timetable and existential dread. Still convinced they’re onto something.",
       link: "https://artist2website.com"
@@ -22,14 +22,14 @@ const artists = [
   },
   {
       name: "Jonathan Richman",
-      image: "/artist_image_wireframe.jpg",
+      image: "/jonathan.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
       link: "https://artist4website.com"
   },
   {
       name: "Hugh F",
-      image: "/artist_image_wireframe.jpg",
+      image: "/hughf.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
       link: "https://artist4website.com"
@@ -50,7 +50,7 @@ const artists = [
   },
   {
       name: "Anthonie Tonnon",
-      image: "/artist_image_wireframe.jpg",
+      image: "/anthonie.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
       link: "https://artist4website.com"

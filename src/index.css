@@ -94,12 +94,12 @@ img{
 
 /* Artist Grid */
 .artist-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 5em;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 10rem;
+  gap: 4rem;
   justify-content: center; /* Ensure grid aligns center */
 }
 
@@ -228,6 +228,19 @@ img{
   margin: 0 auto;
 }
 
+
+.footer-container{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.footer-element{
+  margin: 3%;
+}
 
 /* Responsive Design */
 
