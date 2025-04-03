@@ -54,7 +54,7 @@ const ArtistGrid = () => {
                     onClick={() => handleArtistClick(artist)}
                 >
                     <img src={artist.image} alt={artist.name} className="artist-image"  />
-                    <p style={{fontSize:"16px"}} >{artist.name}</p>
+                    <p style={{fontSize:"16px",  margin: "0", marginBottom: "1rem"}} >{artist.name}</p>
                 </div>
             ))}
 
@@ -80,7 +80,7 @@ const ArtistGrid = () => {
                                 alt={selectedArtist.name} 
                             />
 
-                            <p>{selectedArtist.bio}</p>
+                            <p className="artist-text">{selectedArtist.bio}</p>
 
                             <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
                                 Website
