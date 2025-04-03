@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function LandingPage() {
   const [expandedArtist, setExpandedArtist] = useState(null);
-  const [backgroundImage, setBackgroundImage] = useState("/background_image_fyr.jpg");
+  const [backgroundImage, setBackgroundImage] = useState("/flippinYeahSign.jpg");
   const backgroundRef = useRef(null);
   const lineRef = useRef(null);
 
@@ -13,7 +13,7 @@ export default function LandingPage() {
     if (typeof window === "undefined") return;
   
     const handleResize = () => {
-      setBackgroundImage(window.innerWidth < 460 ? "/background_image_fyr3.jpg" : "/reworkingFlippinYeahSign.jpg");
+      setBackgroundImage(window.innerWidth < 460 ? "/bflippinYeahSignPhone.jpg" : "/flippinYeahSign.jpg");
     };
   
     handleResize();
