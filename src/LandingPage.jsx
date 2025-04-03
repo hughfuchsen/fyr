@@ -13,7 +13,7 @@ export default function LandingPage() {
     if (typeof window === "undefined") return;
   
     const handleResize = () => {
-      setBackgroundImage(window.innerWidth < 460 ? "/flippinYeahSignPhone.jpeg" : "/flippinYeahSign.jpg");
+      setBackgroundImage(window.innerWidth < 460 ? "/flippinYeahSignPhone.jpg" : "/flippinYeahSign.jpg");
     };
   
     handleResize();
@@ -31,7 +31,7 @@ export default function LandingPage() {
           top: backgroundRef.current.offsetHeight - (window.innerHeight + 25),
           behavior: "smooth",
         });
-      }, 200);
+      }, 1000);
     }
   }, []);
 
