@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import ArtistGrid from "./ArtistGrid";
 import Footer from "./Footer";
 
@@ -8,7 +7,6 @@ export default function LandingPage() {
   const [backgroundImage, setBackgroundImage] = useState("/background_image_fyr.jpg");
   const backgroundRef = useRef(null);
   const lineRef = useRef(null);
-  const enterButtonRef = useRef(null);
 
   // Handle responsive background image
   useEffect(() => {
