@@ -63,15 +63,15 @@ const ArtistGrid = () => {
                     <div ref={modalRef} className="expanded-artist-modal">
                         {/* Only render the box-template when it's preloaded */}
                         {isBoxTemplateLoaded && (
-                            <img src="/box_template.jpg" className="box-template" alt="Background"/>
+                            <div className="box-template" alt="Background"></div>
                         )}
-                        <div style={{ margin: "0 auto" }}>
+                        <div style={{ margin: "20px auto" }}>
                             <button onClick={handleClose} className="close-button">×</button>
-                            <p style={{fontSize: "1.3rem"}} >{selectedArtist.name}</p>
+                            <p style={{fontSize: "1rem"}} >{selectedArtist.name}</p>
 
                             <img 
                                 style={{ 
-                                    maxWidth: "60%",  
+                                    maxWidth: "40%",  
                                     objectFit: "contain",  
                                     display: "inline-block",
                                     margin: "0 auto"  
