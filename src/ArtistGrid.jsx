@@ -67,15 +67,10 @@ const ArtistGrid = () => {
                         )}
                         <div style={{ margin: "20px auto" }}>
                             <button onClick={handleClose} className="close-button">×</button>
-                            <p style={{fontSize: "1rem"}} >{selectedArtist.name}</p>
+                            {/* <p style={{fontSize: "1rem"}} >{selectedArtist.name}</p> */}
 
                             <img 
-                                style={{ 
-                                    maxWidth: "40%",  
-                                    objectFit: "contain",  
-                                    display: "inline-block",
-                                    margin: "0 auto"  
-                                }} 
+                                className="modal-image"
                                 src={selectedArtist.image} 
                                 alt={selectedArtist.name} 
                             />
