@@ -13,7 +13,7 @@ export default function LandingPage() {
     if (typeof window === "undefined") return;
   
     const handleResize = () => {
-      setBackgroundImage(window.innerWidth < 460 ? "/bflippinYeahSignPhone.jpg" : "/flippinYeahSign.jpg");
+      setBackgroundImage(window.innerWidth < 460 ? "/flippinYeahSignPhone.jpeg" : "/flippinYeahSign.jpg");
     };
   
     handleResize();
