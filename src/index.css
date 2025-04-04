@@ -280,7 +280,7 @@ img{
 /* Responsive Design */
 
 /* Large Tablets (Max Width 1200px) */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
   .landing-page-container {
       height: 100%;
@@ -296,15 +296,6 @@ img{
 
 
 
-  .expanded-artist-modal img{
-    max-height: 280px;
-  }
-
-  .expanded-artist-modal h2 {
-    font-size: 1.2rem;
-  }
-
-
   .artist-text::-webkit-scrollbar-thumb {
     background-color: #961212; /* Scrollbar thumb color */
     border-radius: 4px;
@@ -312,6 +303,15 @@ img{
 
   .artist-text::-webkit-scrollbar-track {
     background-color: #f0f0f0; /* Scrollbar track color */
+  }
+}
+/* Large Tablets (Max Width 1200px) */
+@media (max-width: 900px) {
+
+    .artist-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 column */
+      gap: 3rem;
+      margin-top: 100px;
   }
 }
 
