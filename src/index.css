@@ -144,9 +144,9 @@ img{
 
 .expanded-artist-modal {
   position: fixed;
-  width: 80%;
+  width: 90%;
+  height: 70%;
   max-height: 85vh;
-  max-width: 1200px; /* Prevents it from getting too wide */
   padding: 1.5rem; /* Reduce padding for more content space */
   color: #961212;
   display: flex;
@@ -154,10 +154,11 @@ img{
   align-items: center;
   justify-content: center;
   text-align: center;
+  
 }
 
-.modal-image{
-  width: 50%;
+.expanded-artist-modal img{
+  max-height: 300px;
   object-fit: contain;  
   display: inline-block;
   margin: 0 auto;  
@@ -184,7 +185,6 @@ img{
   font-size: 2rem;
   border: none;
   cursor: pointer;
-  padding: 5px 10px;
   z-index: 101; /* Above everything */
 }
 
@@ -199,20 +199,21 @@ img{
 
 .expanded-artist-modal p {
   font-size: 1rem;
+  text-align: left;
+  overflow-y: scroll;
+  width: 95%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
 
 .expanded-artist-modal a {
   display: inline-block;
-  margin: 10px auto;
-  margin-inline: 3rem;
-  padding: 5px;
-  padding-left: 18px;
-  padding-right: 18px;
-  border: solid 1px #961212;
+  margin-inline: 1rem;
+  margin-top: 2rem;
   color: #961212;
-  border-radius: 3px;
   text-decoration: none;
   transition: background 0.3s ease;
   font-size: clamp(0.5rem, 4vw, 0.8rem); /* Between 1.5rem and 3rem, scaling with viewport */
@@ -237,12 +238,15 @@ img{
   /* Scrollbar styles */
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #961212 #f0f0f0; /* Thumb color, Track color */
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 /* For WebKit-based browsers (Chrome, Safari, Edge) */
 .artist-text::-webkit-scrollbar {
   width: 8px; /* Scrollbar width */
 }
+
 
 .artist-text::-webkit-scrollbar-thumb {
   background-color: #961212; /* Scrollbar thumb color */
@@ -276,7 +280,8 @@ img{
 /* Responsive Design */
 
 /* Large Tablets (Max Width 1200px) */
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
+
   .landing-page-container {
       height: 100%;
       min-height: auto;        
@@ -289,74 +294,27 @@ img{
       /* gap: 10rem; */
   }
 
-  .expanded-artist-modal  {
-    max-width: 600px; /* Prevents it from getting too wide */
+
+
+  .expanded-artist-modal img{
+    max-height: 280px;
   }
 
   .expanded-artist-modal h2 {
     font-size: 1.2rem;
   }
 
-  
+
+  .artist-text::-webkit-scrollbar-thumb {
+    background-color: #961212; /* Scrollbar thumb color */
+    border-radius: 4px;
+  }
+
+  .artist-text::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Scrollbar track color */
+  }
 }
 
-/* Small Tablets & Large Phones (Max Width 900px) */
-@media (max-width: 900px) {
-  .landing-page-container {
-      height: 100%;
-      min-height: auto;        
-      /* background-color: #b5e7ff;     */
-  }
-  .background-image {
-      width: 95%;
-      height: 95%;
-      padding-top: 2rem;
-  }
-
-  .artist-container {
-      grid-template-columns: repeat(1, 1fr); /* 1 column */
-      gap: 3rem;
-      margin-top: 100px;
-  }
-  /* .artist-block:hover {
-      color: #961212;
-  } */
-
-  .enter-site-button {
-      bottom: -55px; 
-      display: grid; 
-      border: solid 1px #961212;
-      color:#961212;
-      background-color: rgba(255, 255, 255, 0);
-      border-radius: 3px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      font-size: clamp(0.5rem, 4vw, 0.8rem); /* Between 1.5rem and 3rem, scaling with viewport */
-  }
-
-  .expanded-artist-modal {
-    max-height: 80vh;
-  }
-
-  .expanded-artist-modal p {
-    font-size: 12px;
-    height: 100%;
-  }
-  
-  .performance-line-1{
-    display: block;
-    margin: 0 auto;
-  }
-  
-}
-
-/* Small Phones (Max Width 700px) */
-@media (max-width: 700px) {
-  .artist-container {
-      width: 85%;
-  }
-
-}
 
 
 
@@ -375,22 +333,29 @@ img{
 
   .landing-page-container {
     margin-top: 5em;
-}
+  }
+
+
+  .expanded-artist-modal img {
+    max-width: 250px;
+    max-height: 500px;
+  }
   
 }
 
 
 
-/* Tiny Phones (Max Width 460px) */
 @media (max-width: 380px) {
   .artist-container {
       width: 85%;
   }
 
-
   
-
   
+  .expanded-artist-modal {
+    max-width: 350px;
+  }
+
   .expanded-artist-modal p {
     font-size: 10px;
   }
@@ -399,12 +364,30 @@ img{
     font-size: 8px;
     padding: 6px;
   }
+
+  .modal-image{
+    min-height: 20px;
+    max-height: 200px;
+  }
 }
 
 /* dealing with when one turns their phone on the side! */
-@media (max-height: 380px) {
-  .modal-image{
-    height: 10%;
+@media only screen and (max-height: 950px) {
+  .expanded-artist-modal img{
+    min-height: 20px;
+    max-height: 250px;
+  }
+
+  .artist-text{
+    max-height: 70px;
+  }
+}
+
+/* dealing with when one turns their phone on the side! */
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .expanded-artist-modal img{
+    min-height: 20px;
+    max-height: 150px;
   }
 
   .artist-text{
