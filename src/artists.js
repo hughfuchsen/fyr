@@ -11,7 +11,7 @@ const artists = [
       name: "Shelley Short",
       image: "/shelley.jpg",
       description: "Claims to have ghostwritten 'Falling Aeroplanes.'",
-      bio: "Believes Hanlon’s lyrics hide clues to a treasure hunt. Has visited every location mentioned in his songs, only to find an old bus timetable and existential dread. Still convinced they’re onto something.",
+      bio: "bio",
       website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/shelley-short"
   },
@@ -19,7 +19,7 @@ const artists = [
       name: "Kankawa Nagarra",
       image: "/kankawa.jpg",
       description: "Accidentally called Darren Hanlon 'Dan Harmon' once. Still mortified.",
-      bio: "Wrote a folk song about Darren writing a folk song about them. Now it’s 12 minutes long, with key changes and a whispered plea for acknowledgment on cassette. Is it genius or a cry for help?",
+      bio: "bio",
       website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/kankawa-nagarra"
   },
@@ -27,7 +27,7 @@ const artists = [
     name: "Hugh F",
     image: "/hughf.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.",
+    bio: "bio",
     website: "https://hughfuchsen.art",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/hugh-f"
   },
@@ -35,7 +35,7 @@ const artists = [
     name: "Jack Davies",
     image: "/jackD.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    bio: "bio",
     website: "https://www.jackdaviesandthebushchooks.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/jack-davies"
   },
@@ -43,7 +43,7 @@ const artists = [
     name: "Roger Knox",
     image: "/artist_image_wireframe.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    bio: "bio",
     website: "https://rogerknoxmusic.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
   },
@@ -51,7 +51,7 @@ const artists = [
       name: "Jonathan Richman",
       image: "/jonathan.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+      bio: "bio",
       website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/jonathan-richman"
   },
@@ -59,7 +59,7 @@ const artists = [
     name: "Ruth Parker",
     image: "/ruthParker.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    bio: "bio",
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/ruth-parker"
   },
@@ -67,7 +67,7 @@ const artists = [
     name: "Jerrah Patston",
     image: "/jerrahPatston.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    bio: "bio",
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/jerrah-patston"
   },
@@ -75,7 +75,7 @@ const artists = [
     name: "Kangaroos With Machine Guns",
     image: "/kwmg.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    bio: "bio",
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/kangaroos-with-machine-guns"
   },
@@ -83,7 +83,7 @@ const artists = [
       name: "The Grand Magoozi",
       image: "/susie.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+      bio: "bio",
       website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/the-grand-magoozi"
   },
@@ -91,7 +91,7 @@ const artists = [
       name: "Anthonie Tonnon",
       image: "/anthonie.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+      bio: "bio",
       website: "https://www.anthonietonnon.com",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/anthonie-tonnon"
   },
@@ -99,7 +99,7 @@ const artists = [
       name: "David Dondero",
       image: "/artist_image_wireframe.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+      bio: "bio",
       website: "https://www.davedondero.com",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
   },
