@@ -204,8 +204,13 @@ img{
   overflow-y: scroll;
   width: 90%;
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  /* Scrollbar styles */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #961212 #f0f0f0; /* Thumb color, Track color */
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 
@@ -232,16 +237,7 @@ img{
 }
 
 
-.artist-bio-text {
-  overflow: auto;
-  padding: 1rem auto;
-  background-color: #f0f0f0;
-  /* Scrollbar styles */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #961212 #f0f0f0; /* Thumb color, Track color */
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
+
 
 .selected-artist-name {
   font-size: 1rem; 
