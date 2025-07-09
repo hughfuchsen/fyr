@@ -198,10 +198,10 @@ img{
 
 
 .expanded-artist-modal p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: left;
   overflow-y: scroll;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -212,7 +212,7 @@ img{
 .expanded-artist-modal a {
   display: inline-block;
   margin-inline: 1rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   color: #961212;
   text-decoration: none;
   transition: background 0.3s ease;
@@ -226,14 +226,16 @@ img{
 
 .artist-image {
   width: 100%;
+  margin: 0 auto;
   /* border: solid 11px rgb(255, 241, 225); */
 }
 
 
-.artist-text {
+.artist-bio-text {
   width: 100%;
   max-height: 200px; /* Adjust this value as needed */
   overflow: auto;
+  padding: 10rem auto;
   background-color: #f0f0f0;
   /* Scrollbar styles */
   scrollbar-width: thin; /* For Firefox */
@@ -242,18 +244,25 @@ img{
   padding-left: 0.5rem;
 }
 
+.selected-artist-name {
+  font-size: 1rem; 
+  margin: 0;
+  padding: 0; 
+  text-align: center; 
+}
 /* For WebKit-based browsers (Chrome, Safari, Edge) */
-.artist-text::-webkit-scrollbar {
+.artist-bio-text::-webkit-scrollbar {
   width: 8px; /* Scrollbar width */
+  /* padding-right: 0.5rem; */
 }
 
 
-.artist-text::-webkit-scrollbar-thumb {
+.artist-bio-text::-webkit-scrollbar-thumb {
   background-color: #961212; /* Scrollbar thumb color */
   border-radius: 4px;
 }
 
-.artist-text::-webkit-scrollbar-track {
+.artist-bio-text::-webkit-scrollbar-track {
   background-color: #f0f0f0; /* Scrollbar track color */
 }
 
@@ -296,21 +305,30 @@ img{
 
 
 
-  .artist-text::-webkit-scrollbar-thumb {
+  .artist-bio-text::-webkit-scrollbar-thumb {
     background-color: #961212; /* Scrollbar thumb color */
     border-radius: 4px;
   }
 
-  .artist-text::-webkit-scrollbar-track {
+  .artist-bio-text::-webkit-scrollbar-track {
     background-color: #f0f0f0; /* Scrollbar track color */
   }
 }
 /* Large Tablets (Max Width 1200px) */
 @media (max-width: 900px) {
 
-    .artist-container {
-      grid-template-columns: repeat(1, 1fr); /* 1 column */
-      gap: 3rem;
+  .artist-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    gap: 2rem;
+  }
+
+  .expanded-artist-modal p {
+    /* height: 200px; */
+    margin: 0 auto;
+  }
+
+  .expanded-artist-modal img {
+    max-height: 200px;
   }
 }
 
@@ -335,10 +353,7 @@ img{
   }
 
 
-  .expanded-artist-modal img {
-    max-width: 250px;
-    max-height: 500px;
-  }
+
   
 }
 
@@ -355,41 +370,47 @@ img{
     max-width: 350px;
   }
 
-  .expanded-artist-modal p {
-    font-size: 10px;
-  }
+
 
   .expanded-artist-modal a {
     font-size: 8px;
     padding: 6px;
   }
 
-  .modal-image{
+  .expanded-artist-modal img{
     min-height: 20px;
     max-height: 200px;
   }
 }
 
 /* dealing with when one turns their phone on the side! */
-@media only screen and (max-height: 950px) {
+@media only screen and (orientation: landscape) and (max-height: 950px) {
   .expanded-artist-modal img{
     min-height: 20px;
     max-height: 250px;
   }
 
-  .artist-text{
-    max-height: 70px;
-  }
+
 }
 
 /* dealing with when one turns their phone on the side! */
-@media only screen and (orientation: landscape) and (max-height: 600px) {
+@media only screen and (orientation: landscape) and (max-height: 750px) {
   .expanded-artist-modal img{
     min-height: 20px;
     max-height: 150px;
   }
 
-  .artist-text{
-    max-height: 70px;
+  .expanded-artist-modal p {
+    max-height: 180px;
+  }
+}
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+  .expanded-artist-modal img{
+    min-height: 20px;
+    max-height: 100px;
+  }
+
+  .expanded-artist-modal p {
+    max-height: 180px;
   }
 }

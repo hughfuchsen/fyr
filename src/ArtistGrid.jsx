@@ -65,17 +65,16 @@ const ArtistGrid = () => {
                         {isBoxTemplateLoaded && (
                             <div className="box-template" alt="Background"></div>
                         )}
-                        <div style={{ margin: "20px auto" }}>
+                        <div>
                             <button onClick={handleClose} className="close-button">×</button>
-                            {/* <p style={{fontSize: "1rem"}} >{selectedArtist.name}</p> */}
-
+                            <div className="selected-artist-name">{selectedArtist.name}</div>
                             <img 
                                 className="modal-image"
                                 src={selectedArtist.image} 
                                 alt={selectedArtist.name} 
                             />
 
-                            <p className="artist-text">{selectedArtist.bio}</p>
+                            <p className="artist-bio-text">{selectedArtist.bio}</p>
 
                             <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
                                 Website
