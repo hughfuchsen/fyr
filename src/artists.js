@@ -28,7 +28,7 @@ const artists = [
     image: "/hughf.jpg",
     description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
     bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.",
-    website: "https://www.hughfuchsen.art",
+    website: "https://hughfuchsen.art",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/hugh-f"
   },
   {
