@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import ArtistGrid from "./ArtistGrid";
 import Footer from "./Footer";
 
+
 export default function LandingPage() {
   const [expandedArtist, setExpandedArtist] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState("/flippinYeahSign.jpg");

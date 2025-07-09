@@ -44,6 +44,7 @@ const ArtistGrid = () => {
         };
     }, []);
 
+
     return (
         
         <div className="artist-container">

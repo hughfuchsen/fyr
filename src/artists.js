@@ -71,7 +71,7 @@ const artists = [
   },
   {
       name: "Jerrah Patston",
-      image: "/artist_image_wireframe.jpg",
+      image: "/jerrahPatston.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
       link: "https://artist4website.com"

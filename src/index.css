@@ -37,10 +37,20 @@ hr{
   border-radius: 3px;
 }
 
-a {
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
   text-decoration: none;
+  outline: none;
   color: #961212;
 }
+
+
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -247,7 +257,7 @@ img{
 
 .footer-element{
   margin: 3%;
-  border: 0px, 3px solid;
+  /* border: 0px, 3px solid; */
 }
 
 .footer-divider {
@@ -303,7 +313,7 @@ img{
 @media (max-width: 750px) {
 
   .expanded-artist-modal {
-    height: 80%;  
+    height: 100%;  
   }
   .expanded-artist-modal img {
     height: 80%;  
