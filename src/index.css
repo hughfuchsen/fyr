@@ -24,6 +24,10 @@ body {
   color: #961212;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 /* p {
   margin: 0 auto;
 } */
@@ -133,7 +137,7 @@ img{
   align-items: center;
   justify-content: center;
   text-align: center;
-  
+  overflow: hidden;
 }
 
   .expanded-artist-modal a,

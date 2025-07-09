@@ -44,6 +44,18 @@ const ArtistGrid = () => {
         };
     }, []);
 
+    useEffect(() => {
+        if (selectedArtist) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [selectedArtist]);
+
 
     return (
         
