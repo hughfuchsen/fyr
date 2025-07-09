@@ -89,12 +89,18 @@ const ArtistGrid = () => {
 
                             <p className="artist-bio-text">{selectedArtist.bio}</p>
 
+                            {selectedArtist.website !== "null" && (
                             <a href={selectedArtist.website} target="_blank" rel="noopener noreferrer">
                                 Website
                             </a>
+                            )}
+
+                            {/* Only show merch link if it's not "null" */}
+                            {selectedArtist.productLink !== "null" && (
                             <a href={selectedArtist.productLink} target="_blank" rel="noopener noreferrer">
                                 Merch
                             </a>
+                            )}
                         </div>
                     </div>
                 </div>
