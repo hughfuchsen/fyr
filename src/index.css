@@ -7,8 +7,8 @@
 }
 
 *::selection {
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-  color: rgb(255, 115, 0); /* Change text color */
+  background: #961212;
+  color: rgb(255, 165, 92); /* Change text color */
 }
 
 body {
@@ -35,6 +35,11 @@ hr{
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #961212;
 }
 
 code {
@@ -269,7 +274,7 @@ img{
 
 
 .footer-container{
-  margin-top: 5%;
+  margin: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,8 +284,13 @@ img{
 
 .footer-element{
   margin: 3%;
+  border: 0px, 3px solid;
 }
 
+.footer-divider {
+  border: 1px solid #961212;
+  height: 40px;
+}
 /* Responsive Design */
 
 /* Large Tablets (Max Width 1200px) */

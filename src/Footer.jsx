@@ -5,9 +5,9 @@ const Footer = () => {
     return (
         
         <div className="footer-container">
-           <p className="footer-element">MERCH STORE</p>
+           <a href="https://flippinyeahindustries.bigcartel.com/products" target="_blank" rel="noopener noreferrer">MERCH STORE</a>
+           <hr className="footer-divider" />
            <p className="footer-element">P.O. BOX 821 GYMPIE, QLD 4570</p>
-           {/* <p className="footer-element">yes</p> */}
         </div>
     );
 };
