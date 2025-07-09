@@ -169,6 +169,7 @@ img{
 .expanded-artist-modal p {
   max-height: 200px; /* Adjust this value as needed */
   font-size: 0.8rem;
+  margin: 0 auto;
   text-align: left;
   overflow-y: scroll;
   width: 90%;
