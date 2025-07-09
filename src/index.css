@@ -323,7 +323,7 @@ img{
 @media (max-width: 750px) {
 
   .expanded-artist-modal {
-    height: 80%;  
+    height: 85%;  
   }
   .expanded-artist-modal img {
     height: 80%;  
@@ -380,6 +380,13 @@ img{
     max-height: 200px;
   }
 }
+@media (max-width: 150px) {
+
+  
+  .expanded-artist-modal {
+    height: 100%;
+  }
+}
 
 /* dealing with when one turns their phone on the side! */
 @media only screen and (orientation: landscape) and (max-height: 950px) {
@@ -402,13 +409,16 @@ img{
     max-height: 180px;
   }
 }
-@media only screen and (orientation: landscape) and (max-height: 500px) {
+@media only screen and (orientation: landscape) and (max-height: 550px) {
+  .expanded-artist-modal {
+    height: 100%;
+  }
   .expanded-artist-modal img{
     min-height: 20px;
     max-height: 100px;
   }
 
   .expanded-artist-modal p {
-    max-height: 180px;
+    max-height: 130px;
   }
 }

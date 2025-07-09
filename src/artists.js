@@ -4,7 +4,7 @@ const artists = [
       image: "/darren.jpg",
       description: "Once played tambourine for Darren Hanlon... uninvited.",
       bio: "Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle.Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’ Darren said he’d 'think about it,' which meant ‘absolutely not.’ Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.",
-      website: "https://artist1website.com",
+      website: "https://www.darrenhanlon.com",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/darren-hanlon"
   },
   {
@@ -12,7 +12,7 @@ const artists = [
       image: "/shelley.jpg",
       description: "Claims to have ghostwritten 'Falling Aeroplanes.'",
       bio: "Believes Hanlon’s lyrics hide clues to a treasure hunt. Has visited every location mentioned in his songs, only to find an old bus timetable and existential dread. Still convinced they’re onto something.",
-      website: "https://artist2website.com",
+      website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/shelley-short"
   },
   {
@@ -20,7 +20,7 @@ const artists = [
       image: "/kankawa.jpg",
       description: "Accidentally called Darren Hanlon 'Dan Harmon' once. Still mortified.",
       bio: "Wrote a folk song about Darren writing a folk song about them. Now it’s 12 minutes long, with key changes and a whispered plea for acknowledgment on cassette. Is it genius or a cry for help?",
-      website: "https://artist3website.com",
+      website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/kankawa-nagarra"
   },
   {
@@ -36,7 +36,7 @@ const artists = [
       image: "/hughf.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.",
-      website: "https://artist4website.com",
+      website: "https://www.hughfuchsen.art",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/hugh-f"
   },
   {
@@ -44,7 +44,7 @@ const artists = [
       image: "/jackD.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
-      website: "https://artist4website.com",
+      website: "https://www.jackdaviesandthebushchooks.com",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/jack-davies"
   },
   {
@@ -52,7 +52,7 @@ const artists = [
       image: "/susie.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
-      website: "https://artist4website.com",
+      website: "null",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/the-grand-magoozi"
   },
   {
