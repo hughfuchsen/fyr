@@ -136,6 +136,16 @@ img{
   
 }
 
+  .expanded-artist-modal a,
+  .expanded-artist-modal a:visited,
+  .expanded-artist-modal a:hover,
+  .expanded-artist-modal a:active,
+  .expanded-artist-modal a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #961212;
+  }
+
 .expanded-artist-modal img{
   max-height: 300px;
   object-fit: contain;  
@@ -204,9 +214,9 @@ img{
 
 }
 
-.expanded-artist-modal a:hover {
+/* .expanded-artist-modal a:hover {
   background: rgb(197, 36, 0, 1);
-}
+} */
 
 .artist-image {
   width: 100%;
