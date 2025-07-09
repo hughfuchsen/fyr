@@ -24,6 +24,30 @@ const artists = [
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/kankawa-nagarra"
   },
   {
+    name: "Hugh F",
+    image: "/hughf.jpg",
+    description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
+    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.",
+    website: "https://www.hughfuchsen.art",
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/hugh-f"
+  },
+  {
+    name: "Jack Davies",
+    image: "/jackD.jpg",
+    description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
+    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    website: "https://www.jackdaviesandthebushchooks.com",
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/jack-davies"
+  },
+  {
+    name: "Roger Knox",
+    image: "/artist_image_wireframe.jpg",
+    description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
+    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    website: "https://artist4website.com",
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
+  },
+  {
       name: "Jonathan Richman",
       image: "/jonathan.jpg",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
@@ -32,20 +56,28 @@ const artists = [
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/jonathan-richman"
   },
   {
-      name: "Hugh F",
-      image: "/hughf.jpg",
-      description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.but participants just made tea and reminisced instead of escaping.",
-      website: "https://www.hughfuchsen.art",
-      productLink: "https://flippinyeahindustries.bigcartel.com/artist/hugh-f"
+    name: "Ruth Parker",
+    image: "/ruthParker.jpg",
+    description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
+    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    website: "https://artist4website.com",
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/ruth-parker"
   },
   {
-      name: "Jack Davies",
-      image: "/jackD.jpg",
-      description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
-      website: "https://www.jackdaviesandthebushchooks.com",
-      productLink: "https://flippinyeahindustries.bigcartel.com/artist/jack-davies"
+    name: "Jerrah Patston",
+    image: "/jerrahPatston.jpg",
+    description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
+    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    website: "https://artist4website.com",
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/jerrah-patston"
+  },
+  {
+    name: "Kangaroos With Machine Guns",
+    image: "/kwmg.jpg",
+    description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
+    bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
+    website: "https://artist4website.com",
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/kangaroos-with-machine-guns"
   },
   {
       name: "The Grand Magoozi",
@@ -70,30 +102,6 @@ const artists = [
       bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
       website: "https://artist4website.com",
       productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
-  },
-  {
-      name: "Ruth Parker",
-      image: "/ruthParker.jpg",
-      description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
-      website: "https://artist4website.com",
-      productLink: "https://flippinyeahindustries.bigcartel.com/artist/ruth-parker"
-  },
-  {
-      name: "Jerrah Patston",
-      image: "/jerrahPatston.jpg",
-      description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
-      website: "https://artist4website.com",
-      productLink: "https://flippinyeahindustries.bigcartel.com/artist/jerrah-patston"
-  },
-  {
-      name: "Kangaroos With Machine Guns",
-      image: "/kwmg.jpg",
-      description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
-      bio: "Was kicked out of a gig for shouting 'Play the hits!' Later planned a ‘Darren Hanlon Escape Room’ based on his lyrics, but participants just made tea and reminisced instead of escaping.",
-      website: "https://artist4website.com",
-      productLink: "https://flippinyeahindustries.bigcartel.com/artist/kangaroos-with-machine-guns"
   },
 ];
 
