@@ -71,33 +71,6 @@ img{
   object-fit: cover; /* Ensures the image covers the container */
 }
 
-/* Centered Enter Site Button */
-.enter-site-button {
-  position: absolute;
-  bottom: 60px;
-  text-align: center; /* Ensures text stays centered */
-  white-space: nowrap; /* Prevents text from wrapping */
-  display: inline-block; /* Keeps its natural width */
-  padding: 5px 10px;
-  cursor: pointer;
-  transition: background-color 0.6s ease;
-  /* border: solid 2px #8c1a01; */
-  font-size: 1rem;
-
-
-  border: solid 1px white;
-  color: white;
-  background-color: #822405;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  font-size: clamp(0.5rem, 4vw, 0.8rem); /* Between 1.5rem and 3rem, scaling with viewport */
-}
-
-.enter-site-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
 
 /* Artist Grid */
 .artist-container {
@@ -121,15 +94,6 @@ img{
   position: relative;
 }
 
-/* .artist-block:hover {
-  color: #0e273e;
-  transition: all 0.2s ease-in-out;
-} */
-/* .artist-block:hover {
-  box-shadow: 0 4px 33px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-} */
 
 /* Expanded Artist Block */
 
@@ -208,14 +172,12 @@ img{
   text-align: left;
   overflow-y: scroll;
   width: 90%;
-  margin: 0 auto;
   padding: 1rem;
   background-color: #f0f0f0;
   /* Scrollbar styles */
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #961212 #f0f0f0; /* Thumb color, Track color */
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  /* line-height: 25px; */
 }
 
 
@@ -337,6 +299,16 @@ img{
   }
 }
 
+@media (max-width: 750px) {
+
+  .expanded-artist-modal {
+    height: 80%;  
+  }
+  .expanded-artist-modal img {
+    height: 80%;  
+  }
+}
+
 
 
 
@@ -357,9 +329,10 @@ img{
     margin-top: 5em;
   }
 
+  .expanded-artist-modal {
+    height: 85%;  
+  }
 
-
-  
 }
 
 
@@ -378,7 +351,6 @@ img{
 
 
   .expanded-artist-modal a {
-    font-size: 8px;
     padding: 6px;
   }
 
