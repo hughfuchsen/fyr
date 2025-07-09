@@ -234,7 +234,7 @@ img{
 
 .artist-bio-text {
   overflow: auto;
-  padding: 2rem auto;
+  padding: 1rem auto;
   background-color: #f0f0f0;
   /* Scrollbar styles */
   scrollbar-width: thin; /* For Firefox */
