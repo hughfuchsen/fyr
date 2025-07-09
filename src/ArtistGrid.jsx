@@ -80,7 +80,7 @@ const ArtistGrid = () => {
                             <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
                                 Website
                             </a>
-                            <a href={selectedArtist.link} target="_blank" rel="noopener noreferrer">
+                            <a href={selectedArtist.productLink} target="_blank" rel="noopener noreferrer">
                                 Merch
                             </a>
                         </div>
