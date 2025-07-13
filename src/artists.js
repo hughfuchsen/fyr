@@ -81,7 +81,7 @@ const artists = [
   },
   {
       name: "The Grand Magoozi",
-      image: "/susie.jpg",
+      image: "/susie3.JPG",
       description: "Owns a rare bootleg of Darren Hanlon sneezing in E minor.",
       bio: "bio",
       website: "null",
