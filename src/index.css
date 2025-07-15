@@ -11,6 +11,10 @@
   color: rgb(255, 165, 92); /* Change text color */
 }
 
+html {
+  font-size: 16px; /* Most common and accessible */
+}
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -168,7 +172,7 @@ img{
   grid-column: 1 / 3;
   grid-row: 1;
   top: 3%;
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   margin: 0;
   padding: 0; 
   text-align: center; 
@@ -335,7 +339,8 @@ img{
   .selected-artist-name{
     grid-row: 1/2;
     grid-area: selected-artist-name;
-    height: 5vh;
+    height: 10vh;
+    padding-top: 1rem;
   }
 
   .modal-image{
@@ -352,10 +357,26 @@ img{
 
   }
 
-  .modal-link-container{
+  /* .modal-link-container{
     grid-row: 4;
     grid-area: modal-link-container;
-    height: 5vh;
+    height: 10vh;
+  } */
+
+  .modal-link-container {
+    grid-area: modal-link-container;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 15vh;
+    font-size: 0.8rem;
+    padding-top: 0.5em; /* optional: adds space from the top */
+
+  }
+
+  .modal-link{
+    margin-bottom: 25%;
   }
 }
 

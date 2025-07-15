@@ -67,10 +67,10 @@ const ArtistGrid = () => {
                     onClick={() => handleArtistClick(artist)}
                 >
                     <img src={artist.image} alt={artist.name} className="artist-image"  />
-                    <p style={{fontSize:"16px",  margin: "0", marginBottom: "1rem"}} >{artist.name}</p>
+                    <p style={{fontSize:"1rem",  margin: "0", marginBottom: "1rem"}} >{artist.name}</p>
                 </div>
             ))}
-            
+
 
             {selectedArtist && (
             <div className="expanded-artist-overlay">
