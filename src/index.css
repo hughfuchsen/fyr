@@ -378,6 +378,9 @@ img{
   .landing-page-container {
     margin-top: 5em;
   }
+  .footer-container{
+    font-size: 0.7rem;
+  }
 
 }
 
