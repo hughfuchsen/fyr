@@ -236,7 +236,10 @@ img{
   z-index: 101; /* Above everything */
 }
 
-
+.close-button:active,
+.close-button:focus{
+  background-color: white;
+}
 
 
 
