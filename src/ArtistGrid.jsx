@@ -70,7 +70,7 @@ const ArtistGrid = () => {
                     <p style={{fontSize:"16px",  margin: "0", marginBottom: "1rem"}} >{artist.name}</p>
                 </div>
             ))}
-        
+            
 
             {selectedArtist && (
             <div className="expanded-artist-overlay">
