@@ -49,21 +49,15 @@ export default function LandingPage() {
       {/* Hero Section */}
       <div className="landing-page-container" ref={backgroundRef}>
         <img className="background-image" src={backgroundImage} alt="Background" />
-        {/* <motion.div
-          ref={enterButtonRef}
-          className="enter-site-button"
-          onClick={() => lineRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })}
-        >
-          ↓ Artists ↓
-        </motion.div> */}
       </div>
 
       <hr className="performance-line-1" ref={lineRef}/>
+
       {/* Artists Section */}
-      <p
-            style={{fontSize:"1.5em", textAlign: "center", display: "block"}}
-                >ARTISTS</p>
+      <p style={{fontSize:"1.5em", textAlign: "center", display: "block"}}>ARTISTS</p>
+
       <ArtistGrid setExpandedArtist={setExpandedArtist} />
+      
       <Footer/>
     </>
 

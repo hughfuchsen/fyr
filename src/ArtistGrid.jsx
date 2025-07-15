@@ -70,40 +70,49 @@ const ArtistGrid = () => {
                     <p style={{fontSize:"16px",  margin: "0", marginBottom: "1rem"}} >{artist.name}</p>
                 </div>
             ))}
+        
 
             {selectedArtist && (
-                <div className="expanded-artist-overlay">
-                    <div ref={modalRef} className="expanded-artist-modal">
-                        {/* Only render the box-template when it's preloaded */}
-                        {isBoxTemplateLoaded && (
-                            <div className="box-template" alt="Background"></div>
-                        )}
-                        <div>
-                            <button onClick={handleClose} className="close-button">×</button>
-                            <div className="selected-artist-name">{selectedArtist.name}</div>
-                            <img 
-                                className="modal-image"
-                                src={selectedArtist.image} 
-                                alt={selectedArtist.name} 
-                            />
+            <div className="expanded-artist-overlay">
+                <div ref={modalRef} className="expanded-artist-modal">
+                    {isBoxTemplateLoaded && (
+                        <div className="box-template" alt="Background"></div>
+                    )}
 
-                            <p className="artist-bio-text">{selectedArtist.bio}</p>
+                    <button onClick={handleClose} className="close-button">×</button>
+                   
 
-                            {selectedArtist.website !== "null" && (
-                            <a href={selectedArtist.website} target="_blank" rel="noopener noreferrer">
-                                Website
-                            </a>
-                            )}
+                    <div className="modal-content">
+                        <div className="selected-artist-name">{selectedArtist.name}</div>
+                        
+                        <img 
+                        className="modal-image"
+                        src={selectedArtist.image} 
+                        alt={selectedArtist.name} 
+                        />
 
-                            {/* Only show merch link if it's not "null" */}
-                            {selectedArtist.productLink !== "null" && (
-                            <a href={selectedArtist.productLink} target="_blank" rel="noopener noreferrer">
-                                Merch
-                            </a>
-                            )}
+                        <div className="bio-section">
+                            <p>{selectedArtist.bio}</p>
                         </div>
+
+                        <div className="modal-links">
+                        {selectedArtist.website !== "null" && (
+                            <a href={selectedArtist.website} target="_blank" rel="noopener noreferrer">
+                            Website
+                            </a>
+                        )}
+
+                        {selectedArtist.productLink !== "null" && (
+                            <a href={selectedArtist.productLink} target="_blank" rel="noopener noreferrer">
+                            Merch
+                            </a>
+                        )}
                     </div>
+
+                    </div>
+                   
                 </div>
+            </div>
             )}
         </div>
     );
