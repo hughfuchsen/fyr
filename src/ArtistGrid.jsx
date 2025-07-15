@@ -95,15 +95,15 @@ const ArtistGrid = () => {
                             <p>{selectedArtist.bio}</p>
                         </div>
 
-                        <div className="modal-links">
+                        <div className="modal-link-container">
                         {selectedArtist.website !== "null" && (
-                            <a href={selectedArtist.website} target="_blank" rel="noopener noreferrer">
+                            <a href={selectedArtist.website} className="modal-link" target="_blank" rel="noopener noreferrer">
                             Website
                             </a>
                         )}
 
                         {selectedArtist.productLink !== "null" && (
-                            <a href={selectedArtist.productLink} target="_blank" rel="noopener noreferrer">
+                            <a href={selectedArtist.productLink} className="modal-link" target="_blank" rel="noopener noreferrer">
                             Merch
                             </a>
                         )}
