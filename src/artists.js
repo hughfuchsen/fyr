@@ -2,7 +2,7 @@ const artists = [
   {
     name: "Darren Hanlon",
     image: "/darren.jpg",
-    bio: "Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle.Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.’ Darren said he’d 'think about it,' which meant ‘absolutely not.’ Tried to convince Darren Hanlon to form a folk supergroup called ‘Harmonica Caravan.’ Even pitched merch, a concept album, and a world tour via bicycle. Darren said he’d 'think about it,' which meant ‘absolutely not.",
+    bio: ``,
     website: "https://darrenhanlon.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/darren-hanlon"
   },
@@ -66,7 +66,13 @@ const artists = [
   {
     name: "Kangaroos With Machine Guns",
     image: "/kwmg.jpg",
-    bio: "bio",
+    bio: `Kangaroos with machine guns is a band that does not rehearse or write set lists. They believe that music is the union between the personal internal world and the mystical. They are driven by the glittering glistening moment of creation. Many of the songs on this new record are performed by the band for the very first time. They are not perfect but there is a freshness and vibrancy akin to a lightning strike, or a first or last breath.
+    \n\n
+    They are a bi-coastal set up, sometimes in Boorloo, sometimes all over Australia. Fronted by celestial bagman Archer, with Luke Dux on his electrafried guitar , Ryan Dux on the Bull Fiddle and Todd Pickett bangin stuff withim heart.
+    \n\n
+    “We’d done a WA tour together backing Archer in halls, old peoples homes, and sometimes even guerrilla style at traffic lights in Midland. We thought we should document what we had done, so we booked a studio” - Luke Dux
+    \n\n
+    Most of the songs, they had never heard before - each song beginning with Archer’s words and poetry and the music would follow. The synergy of the brothers Dux & Pickett gives heavy space to the romantic and optimistic prose of Archer.`,
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/kangaroos-with-machine-guns"
   },
