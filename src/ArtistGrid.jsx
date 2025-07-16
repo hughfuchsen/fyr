@@ -92,7 +92,9 @@ const ArtistGrid = () => {
                         />
 
                         <div className="bio-section">
-                            <p>{selectedArtist.bio}</p>
+                        {selectedArtist.bio.split('\n\n').map((para, i) => (
+                            <p key={i}>{para}</p>
+                        ))}
                         </div>
 
                         <div className="modal-link-container">
