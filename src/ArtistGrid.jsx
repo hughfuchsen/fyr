@@ -74,22 +74,23 @@ const ArtistGrid = () => {
 
             {selectedArtist && (
             <div className="expanded-artist-overlay">
+                
+                
                 <div ref={modalRef} className="expanded-artist-modal">
-                    {isBoxTemplateLoaded && (
-                        <div className="box-template" alt="Background"></div>
-                    )}
+                {isBoxTemplateLoaded && (<div className="box-template" alt="Background"></div>)}
+
 
                     <button onClick={handleClose} className="close-button">×</button>
                    
 
                     <div className="modal-content">
-                        <div className="selected-artist-name">{selectedArtist.name}</div>
-                        
-                        <img 
-                        className="modal-image"
-                        src={selectedArtist.image} 
-                        alt={selectedArtist.name} 
-                        />
+                        <div className="selected-artist-name-container">
+                            <div className="selected-artist-name">{selectedArtist.name}</div>
+                        </div>
+
+                        <div className="modal-image-container">
+                            <img className="modal-image" src={selectedArtist.image} alt={selectedArtist.name} />
+                        </div>
 
                         <div className="bio-section">
                         {selectedArtist.bio.split('\n\n').map((para, i) => (

@@ -168,7 +168,7 @@ img{
   align-items: center;
 }
 
-.selected-artist-name {
+.selected-artist-name-container {
   grid-column: 1 / 3;
   grid-row: 1;
   top: 3%;
@@ -234,7 +234,7 @@ img{
 
 .close-button {
   position: absolute;
-  top: 1%;
+  top: 3%;
   right: 3%;
   color: #961212;
   background-color: rgba(255, 255, 255, 0);;
@@ -307,8 +307,7 @@ img{
   }
 }
 
-@media (max-width: 880px) {
-
+@media (max-width: 880px), (max-height: 550px) {
   .artist-container {
     grid-template-columns: repeat(2, 1fr); /* 1 column */
     gap: 2rem;
@@ -332,7 +331,7 @@ img{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr); /* 4 equal-height rows */
     grid-template-areas:
-      "selected-artist-name"
+      "selected-artist-name-container"
       "modal-image"
       "bio-section"
       "modal-link-container";
@@ -340,16 +339,23 @@ img{
     gap: 0.5em;
   }
 
-  .selected-artist-name{
+  .selected-artist-name-container{
     grid-row: 1/2;
-    grid-area: selected-artist-name;
-    height: 10vh;
-    padding-top: 1rem;
+    grid-area: selected-artist-name-container;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+ 
+  .selected-artist-name{
+    margin-bottom: 3%;
+    align-items: center;
   }
 
   .modal-image{
     grid-row: 2/3;
-    height: 35vh;
+    height: 25vh;
     object-fit: contain; /* or cover */
     grid-area: modal-image;
   }
@@ -357,28 +363,21 @@ img{
   .bio-section{
     grid-row: 3/4;
     grid-area: bio-section;
-    height: 40vh;
+    height: 35vh;
   }
 
-  /* .modal-link-container{
-    grid-row: 4;
-    grid-area: modal-link-container;
-    height: 10vh;
-  } */
-
   .modal-link-container {
+    grid-row: 3/4;
     grid-area: modal-link-container;
     display: flex;
     flex-direction: row;
     justify-content:center;
-    align-items: center;
-    height: 15vh;
+    align-items:flex-start;
+    height: 25vh;
     font-size: 0.8rem;
   }
 
   .modal-link{
-    margin-bottom: 25%;
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -401,6 +400,7 @@ img{
   .landing-page-container {
     margin-top: 5em;
   }
+
   .footer-container{
     font-size: 0.7rem;
   }
