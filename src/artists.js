@@ -2,7 +2,9 @@ const artists = [
   {
     name: "Darren Hanlon",
     images: ["/darren.jpg"],
-    bio: ``,
+    bio: `The Darren Hanlon universe can be summed up in two words: human connection. He has built a self-sustaining career via his catalog of songs alone. His shows are built around his narrative songwriting and storytelling, and his intimate connection with the audience.
+    \n\n
+    He has recorded many albums and spent years traveling the far-flung corners of the world on his own terms. He doesn’t chase trends. In fact, he seems delightfully allergic to them. He still tours solo or with a rotating cast of musical friends, playing in churches, lounge rooms, and tiny halls where every lyric lands like it was written just for you. And while most artists slow down over time, Hanlon ages like your favourite pair of jeans—worn in all the right places, getting more comfortable, honest, and quietly brilliant with every year.`,
     website: "https://darrenhanlon.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/darren-hanlon"
   },
@@ -18,7 +20,11 @@ const artists = [
   {
     name: "Kankawa Nagarra",
     images: ["/kankawa.jpg"],
-    bio: "bio",
+    bio: `Kankawa Nagarra is a Walmatjarri Elder, teacher and mentor, human rights advocate, and a passionate environmental activist. Born in the traditional lands of the Gooniyandi and Walmatjarri peoples of north western Australia Her journey—from mission life to AMP winner—is a powerful testament to resilience, creativity, and cultural stewardship.
+    \n\n
+    Kankawa spent her childhood listening to the tribal songs at cultural ceremonies, and when she was taken from her family to the mission she was taught hymns and Gospel songs with the choir. On the pastoral lease where she was sent to work Country Music was everywhere and she heard Rock and Roll for the first time on the station gramophone.
+    \n\n
+    But it wasn’t until many years later her musical journey truly began when she stopped to listen to a busker outside a shop in Derby, WA. It was the first time she’d heard the Blues and it awakened something in her. Through it she found a medium to express all her thoughts and feelings and it inspired her to turn these into songs. The empathy of her message extends from those she sees struggling around her to the entire planet being ravaged for profit.`,
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/kankawa-nagarra"
   },
@@ -32,7 +38,7 @@ const artists = [
   {
     name: "Jack Davies",
     images: ["/jackD.jpg"],
-    bio: "bio",
+    bio: `Jack Davies is a celebrated West Australian songwriter, well known for his slick finger picking and rambling poetry. Often performing with his group "Jack Davies and The Bush Chooks", the young singer has garnered a dedicated national audience.`,
     website: "https://www.jackdaviesandthebushchooks.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/jack-davies"
   },
