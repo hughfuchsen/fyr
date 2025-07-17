@@ -31,7 +31,9 @@ const artists = [
   {
     name: "Hugh F",
     images: ["/hughf.jpg"],
-    bio: `bio`,
+    bio: `Hugh F crafts tender, funny, and unflinchingly honest folk songs with the help of his velvet voicebox and a finely tuned radar for life’s quiet absurdities. Singing started as a way to relax the tension in his throat — a physical release that, almost accidentally, became a way to document the odd joys and heartbreaks of growing up a country boy on Dudhuroa Country.
+    \n\n
+    Based in Naarm, but spiritually stationed somewhere between a North East Victorian paddock and the Wodonga Plaza food court, Hugh has quietly built a loyal following across Australia and beyond. He’s toured nationally with Darren Hanlon, supported Chastity Belt in the U.S., and somehow gone viral singing about rats and horses. (This is not a metaphor.)`,
     website: "https://hughfuchsen.art",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/hugh-f"
   },
@@ -52,7 +54,7 @@ const artists = [
   {
     name: "Jonathan Richman",
     images: ["/jonathan.jpg"],
-    bio: "bio",
+    bio: ``,
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/jonathan-richman"
   },
@@ -113,7 +115,7 @@ const artists = [
   {
     name: "Miscellaneous",
     images: ["/artist_image_wireframe.jpg"],
-    bio: "bio",
+    bio: ``,
     website: "https://www.davedondero.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
   },
