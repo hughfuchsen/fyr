@@ -273,8 +273,8 @@ img{
 
 .close-button {
   position: absolute;
-  top: 1%;
-  right: 1%;
+  top: 3%;
+  right: 5%;
   color: #961212;
   background-color: rgba(255, 255, 255, 0);;
   font-size: 2rem;
@@ -381,15 +381,14 @@ img{
   .selected-artist-name-container{
     /* grid-row: 1/2; */
     grid-area: selected-artist-name-container;
-    height: 8vh;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
  
   .selected-artist-name{
-    /* margin-bottom: 10%; */
-    /* align-items: center; */
+    font-size: 0.8rem;
   }
 
   .modal-image-wrapper {
@@ -418,6 +417,7 @@ img{
     grid-row: 3/4;
     grid-area: bio-section;
     height: 37vh;
+    font-size: 0.8rem;
   }
 
   .modal-link-container {
