@@ -374,14 +374,14 @@ img{
       "modal-image-wrapper"
       "bio-section"
       "modal-link-container";
-    height: 100vh; /* Force to fit screen */
-    gap: 0.5em;
+    height: 90vh; /* Force to fit screen */
+    gap: 0.3em;
   }
 
   .selected-artist-name-container{
     /* grid-row: 1/2; */
     grid-area: selected-artist-name-container;
-    height: 7vh;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -397,11 +397,11 @@ img{
     display: inline-block;
     height: auto;
     grid-area: modal-image-wrapper;
-    height: 40vh;
+    height: 37vh;
   }
 
   .modal-image{
-    grid-row: 2/3;
+    /* grid-row: 2/3; */
     object-fit: contain; /* or cover */
   }
 
@@ -417,7 +417,7 @@ img{
   .bio-section{
     grid-row: 3/4;
     grid-area: bio-section;
-    height: 40vh;
+    height: 37vh;
   }
 
   .modal-link-container {
@@ -431,8 +431,13 @@ img{
     font-size: 0.8rem;
   }
 
+  /* .modal-link{
+    margin-bottom: 2%;
+  } */
 }
-
+@media (max-height: 460px) {
+  
+}
 
 @media (max-width: 460px) {
   .artist-container {
