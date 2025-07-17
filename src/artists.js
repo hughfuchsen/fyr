@@ -9,7 +9,9 @@ const artists = [
   {
     name: "Shelley Short",
     image: "/shelley.jpg",
-    bio: "",
+    bio: `Shelley Short is an American singer-songwriter known for her evocative blend of folk, alt-country, and acoustic music. Rooted in Portland, Oregon, she draws deep inspiration from landscapes like the desert, mountains, and especially the Oregon coast.
+    \n\n
+    Short’s music is marked by a warm, vulnerable voice, with lyrics that explore love, grief, resilience, and self-discovery. She blends classic folk traditions with modern textures, enriched by subtle instrumentation like pump organ and lap steel. As one bio puts it, she "transports listeners to the American heartland by conjuring up vivid images of love, grief, and the human experience”`,
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/shelley-short"
   },
@@ -59,7 +61,7 @@ const artists = [
   {
     name: "Jerrah Patston",
     image: "/jerrahPatston.jpg",
-    bio: "bio",
+    bio: ``,
     website: "null",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/jerrah-patston"
   },
@@ -87,7 +89,11 @@ const artists = [
   {
     name: "Anthonie Tonnon",
     image: "/anthonie.jpg",
-    bio: "bio",
+    bio: `Anthonie Tonnon is a distinctive New Zealand singer‑songwriter known for blending indie-pop, synth experiments, and socio-political storytelling that bridges personal emotion and public life. His evolving sound—from folk/indie beginnings to synth-driven art-pop—is matched by a steadfast engagement with community, infrastructure, and environment. He’s as much a creative civic voice as a musician.
+    \n\n
+    He is a passionate public transport advocate and now, operator of Whanganui’s Durie Hill Elevator.
+    \n\n
+    In recent years, his work has focused on the immersive live shows, A Synthesized Universe and Rail Land. His last album 'Leave Love Out Of This' won the Taste Music Prize in 2022.`,
     website: "https://www.anthonietonnon.com",
     productLink: "https://flippinyeahindustries.bigcartel.com/artist/anthonie-tonnon"
   },
