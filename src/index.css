@@ -379,7 +379,7 @@ img{
   }
 
   .selected-artist-name-container{
-    grid-row: 1/2;
+    /* grid-row: 1/2; */
     grid-area: selected-artist-name-container;
     height: 7vh;
     display: flex;

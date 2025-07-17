@@ -116,8 +116,12 @@ const ArtistGrid = () => {
                                 alt={selectedArtist.name} 
                                 className="modal-image"
                                 />
+                                {selectedArtist.images.length > 1 && (
                                 <button onClick={handlePrev}>«</button>
+                                )}
+                                {selectedArtist.images.length > 1 && (
                                 <button onClick={handleNext}>»</button>
+                                )}
                             </div>
                         </div>
 
