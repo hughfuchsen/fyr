@@ -395,7 +395,7 @@ img{
   .modal-image-wrapper {
     position: relative; 
     display: inline-block;
-    height: 100%;
+    height: auto;
   }
 
   .modal-image{
