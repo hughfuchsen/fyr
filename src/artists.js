@@ -30,7 +30,7 @@ const artists = [
   },
   {
     name: "Hugh F",
-    images: ["/hughf.jpg"],
+    images: ["/hughf.jpg", "/hughf3.jpg", "/hughF4.jpg"],
     bio: `Hugh F crafts tender, funny, and unflinchingly honest folk songs with the help of his velvet voicebox and a finely tuned radar for life’s quiet absurdities. 
     \n\n
     Singing started as a way to relax the tension in his throat — a physical release that, almost accidentally, became a way to document the odd joys and heartbreaks of growing up a country boy on Dudhuroa Country.
@@ -96,7 +96,7 @@ const artists = [
   },
   {
     name: "The Grand Magoozi",
-    images: ["/susie3.jpg", "/theGrandMagoozi2.jpg", "/theGrandMagoozi3.jpg", "/theGrandMagoozi4.jpg"],
+    images: ["/theGrandMagoozi1.jpg", "/theGrandMagoozi2.jpg", "/theGrandMagoozi3.jpg", "/theGrandMagoozi4.jpg"],
     bio: `Like a seductive David Lynch chanteuse, The Grand Magoozi occupies the stage in a dreamy twilight world. Susie Scurry’s smoky vocals deliver lament and subtle wit in equal measure, pondering a modern world gone awry.\n\n
     Drawing on formative influences that take in Appalachian string-band music and the canon of Roy Orbison, Scurry calls from a time of burnished musical purity. Infused with both dark space and languor, her songs also honour the likes of Patsy Cline, Karen Dalton and Billy Holiday. The Grand Magoozi is a voice in the lonesome night demanding an earnest and endearing ear, imploring us to see through the haze and make simpler sense of today’s world.`,
     website: "null",
