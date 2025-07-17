@@ -30,7 +30,7 @@ const artists = [
   },
   {
     name: "Hugh F",
-    images: ["/hughf.jpg", "/hughf3.jpg", "/hughF4.jpg"],
+    images: ["/hughf.jpg", "/hughF5.jpg", "/hughf3.jpg"],
     bio: `Hugh F crafts tender, funny, and unflinchingly honest folk songs with the help of his velvet voicebox and a finely tuned radar for life’s quiet absurdities. 
     \n\n
     Singing started as a way to relax the tension in his throat — a physical release that, almost accidentally, became a way to document the odd joys and heartbreaks of growing up a country boy on Dudhuroa Country.
