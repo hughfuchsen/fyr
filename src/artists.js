@@ -80,7 +80,7 @@ const artists = [
   },
   {
     name: "The Grand Magoozi",
-    images: ["/susie3.jpg"],
+    images: ["/susie3.JPG"],
     bio: `Like a seductive David Lynch chanteuse, The Grand Magoozi occupies the stage in a dreamy twilight world. Susie Scurry’s smoky vocals deliver lament and subtle wit in equal measure, pondering a modern world gone awry.\n\n
     Drawing on formative influences that take in Appalachian string-band music and the canon of Roy Orbison, Scurry calls from a time of burnished musical purity. Infused with both dark space and languor, her songs also honour the likes of Patsy Cline, Karen Dalton and Billy Holiday. The Grand Magoozi is a voice in the lonesome night demanding an earnest and endearing ear, imploring us to see through the haze and make simpler sense of today’s world.`,
     website: "null",
