@@ -3,8 +3,10 @@ import artists from "./artists";
 
 const ArtistGrid = () => {
     const [selectedArtist, setSelectedArtist] = useState(null);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const modalRef = useRef(null);
     const [isBoxTemplateLoaded, setIsBoxTemplateLoaded] = useState(false);
+
 
     // Preload box-template image
     useEffect(() => {
@@ -15,11 +17,26 @@ const ArtistGrid = () => {
 
     const handleArtistClick = (artist) => {
         setSelectedArtist(artist);
-    };
+        setCurrentImageIndex(0);
+      };
 
     const handleClose = () => {
         setSelectedArtist(null);
     };
+
+
+    const handleNext = () => {
+        setCurrentImageIndex((prevIndex) =>
+          (prevIndex + 1) % selectedArtist.images.length
+        );
+      };
+      
+      const handlePrev = () => {
+        setCurrentImageIndex((prevIndex) =>
+          (prevIndex - 1 + selectedArtist.images.length) % selectedArtist.images.length
+        );
+      };
+      
 
     // Close when clicking outside the modal
     useEffect(() => {
@@ -66,7 +83,7 @@ const ArtistGrid = () => {
                     className="artist-block"
                     onClick={() => handleArtistClick(artist)}
                 >
-                    <img src={artist.image} alt={artist.name} className="artist-image"  />
+                    <img src={artist.images[0]} alt={artist.name} className="artist-image"  />
                     <p style={{fontSize:"1rem",  margin: "0", marginBottom: "1rem"}} >{artist.name}</p>
                 </div>
             ))}
@@ -88,8 +105,20 @@ const ArtistGrid = () => {
                             <div className="selected-artist-name">{selectedArtist.name}</div>
                         </div>
 
-                        <div className="modal-image-container">
+                        {/* <div className="modal-image-container">
                             <img className="modal-image" src={selectedArtist.image} alt={selectedArtist.name} />
+                        </div> */}
+
+                        <div className="modal-image-container">
+                            <div className="modal-image-wrapper">
+                                <img 
+                                src={selectedArtist.images[currentImageIndex]} 
+                                alt={selectedArtist.name} 
+                                className="modal-image"
+                                />
+                                <button onClick={handlePrev}>«</button>
+                                <button onClick={handleNext}>»</button>
+                            </div>
                         </div>
 
                         <div className="bio-section">
