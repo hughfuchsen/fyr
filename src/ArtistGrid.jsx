@@ -141,6 +141,8 @@ const ArtistGrid = () => {
                         )}
                     </div>
 
+                    <div className="modal-footer-container"></div>
+
                     </div>
                    
                 </div>

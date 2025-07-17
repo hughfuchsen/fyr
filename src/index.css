@@ -199,7 +199,7 @@ img{
 
 .modal-image-wrapper {
   position: relative; 
-   display: inline-block;
+  display: inline-block;
   height: 60vh; 
 }
 
@@ -273,8 +273,8 @@ img{
 
 .close-button {
   position: absolute;
-  top: 3%;
-  right: 3%;
+  top: 1%;
+  right: 1%;
   color: #961212;
   background-color: rgba(255, 255, 255, 0);;
   font-size: 2rem;
@@ -368,12 +368,13 @@ img{
   .modal-content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr); /* 4 equal-height rows */
+    grid-template-rows: repeat(5, 1fr); /* 5 equal-height rows */
     grid-template-areas:
       "selected-artist-name-container"
-      "modal-image"
+      "modal-image-wrapper"
       "bio-section"
-      "modal-link-container";
+      "modal-link-container"
+      "modal-footer-container";
     height: 100vh; /* Force to fit screen */
     gap: 0.5em;
   }
@@ -381,28 +382,28 @@ img{
   .selected-artist-name-container{
     grid-row: 1/2;
     grid-area: selected-artist-name-container;
-    height: 20vh;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
  
   .selected-artist-name{
-    margin-bottom: 3%;
-    align-items: center;
+    /* margin-bottom: 10%; */
+    /* align-items: center; */
   }
 
   .modal-image-wrapper {
     position: relative; 
     display: inline-block;
     height: auto;
+    grid-area: modal-image-wrapper;
+    height: 40vh;
   }
 
   .modal-image{
     grid-row: 2/3;
-    height: 25vh;
     object-fit: contain; /* or cover */
-    grid-area: modal-image;
   }
 
   
@@ -417,22 +418,25 @@ img{
   .bio-section{
     grid-row: 3/4;
     grid-area: bio-section;
-    height: 35vh;
+    height: 40vh;
   }
 
   .modal-link-container {
-    grid-row: 4;
+    /* grid-row: 1/2; */
     grid-area: modal-link-container;
     display: flex;
     flex-direction: row;
     justify-content:center;
-    /* align-items:flex-start; */
-    height: 25vh;
+    align-items: flex-start;
+    height: 10vh;
     font-size: 0.8rem;
   }
 
-  /* .modal-link{
-  } */
+  .modal-footer-container {
+    grid-row: 5;
+    grid-area: modal-footer-container;
+  }
+
 }
 
 
