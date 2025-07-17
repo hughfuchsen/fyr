@@ -367,7 +367,7 @@ img{
   }
 
   .modal-link-container {
-    grid-row: 3/4;
+    grid-row: 4;
     grid-area: modal-link-container;
     display: flex;
     flex-direction: row;
