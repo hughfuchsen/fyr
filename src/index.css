@@ -67,6 +67,8 @@ code {
 
 img{
   width: 100%;
+  user-select: none;
+  -webkit-user-drag: none; /* Stops dragging in Safari/Chrome */
 }
 
 /* Custom Styles */
