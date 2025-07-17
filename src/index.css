@@ -381,14 +381,14 @@ img{
   .selected-artist-name-container{
     /* grid-row: 1/2; */
     grid-area: selected-artist-name-container;
-    height: 7vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
  
   .selected-artist-name{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .modal-image-wrapper {
