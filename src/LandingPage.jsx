@@ -58,7 +58,16 @@ export default function LandingPage() {
   return (
     <>
       {isLoading && (
-      <div className="loading-overlay"></div>
+        <div className="loading-overlay">
+          {/* <p style={{ marginTop: "1rem", fontSize: "0.8rem", color: "#444" }}>
+            Loading...
+          </p> */}
+          <div className="loading-bar-container">
+         
+            <div className="loading-bar"></div>
+
+          </div>
+        </div>
       )}
 
       {/* Hero Section */}
