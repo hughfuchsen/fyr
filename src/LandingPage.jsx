@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import ArtistGrid from "./ArtistGrid";
 import Footer from "./Footer";
+import TourDates from "./TourDates";
 
 
 export default function LandingPage() {
@@ -81,6 +82,8 @@ export default function LandingPage() {
       <p style={{fontSize:"1.5em", textAlign: "center", display: "block"}}>ARTISTS</p>
 
       <ArtistGrid setExpandedArtist={setExpandedArtist} />
+
+      {/* <TourDates/> */}
 
       <Footer/>
     </>
