@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import ArtistGrid from "./ArtistGrid";
 import Footer from "./Footer";
-import TourDates from "./TourDates";
+// import TourDates from "./TourDates";
 
 
 export default function LandingPage() {
