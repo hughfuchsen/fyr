@@ -490,6 +490,8 @@ img{
   .modal-image-wrapper {
     position: relative; 
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     height: auto;
     grid-area: modal-image-wrapper;
     height: 37vh;
