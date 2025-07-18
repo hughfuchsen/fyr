@@ -106,26 +106,19 @@ img{
   0% {
     width: 0%;
   }
-  20% {
+  30% {
     width: 15%;
   }
-  35% {
-    width: 33%;
+  40% {
+    width: 20%;
   }
   50% {
-    width: 45%;
-  }
-  70% {
-    width: 60%;
-  }
-  85% {
-    width: 80%;
+    width: 70%;
   }
   100% {
     width: 100%;
   }
 }
-
 
 
 .background-image {
