@@ -83,7 +83,7 @@ const artists = [
   },
   {
     name: "Kangaroos With Machine Guns",
-    images: ["/kwmg.jpg", "/kwmg2.jpg"],
+    images: ["/kwmg.jpg", "/kwmg2.jpg", "/kwmg3.jpg"],
     bio: `Kangaroos with machine guns is a band that does not rehearse or write set lists. They believe that music is the union between the personal internal world and the mystical. They are driven by the glittering glistening moment of creation. Many of the songs on this new record are performed by the band for the very first time. They are not perfect but there is a freshness and vibrancy akin to a lightning strike, or a first or last breath.
     \n\n
     They are a bi-coastal set up, sometimes in Boorloo, sometimes all over Australia. Fronted by celestial bagman Archer, with Luke Dux on his electrafried guitar , Ryan Dux on the Bull Fiddle and Todd Pickett bangin stuff withim heart.

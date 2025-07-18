@@ -6,7 +6,7 @@ const ArtistGrid = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const modalRef = useRef(null);
     const [isBoxTemplateLoaded, setIsBoxTemplateLoaded] = useState(false);
-
+    const [isPortrait, setIsPortrait] = useState(false);
 
     // Preload box-template image
     useEffect(() => {
@@ -23,6 +23,11 @@ const ArtistGrid = () => {
     const handleClose = () => {
         setSelectedArtist(null);
     };
+
+    function handleImageLoad(e) {
+        const img = e.target;
+        setIsPortrait(img.naturalHeight > img.naturalWidth);
+    }
 
 
     const handleNext = () => {
@@ -109,20 +114,28 @@ const ArtistGrid = () => {
                             <img className="modal-image" src={selectedArtist.image} alt={selectedArtist.name} />
                         </div> */}
 
-                        <div className="modal-image-container">
+                        <div className={`modal-image-container ${isPortrait ? 'portrait' : ''}`}>
+
+                            {selectedArtist.images.length > 1 && (
+                            <button onClick={handlePrev}>«</button>
+                            )}
+                        
+
                             <div className="modal-image-wrapper">
+                            
                                 <img 
                                 src={selectedArtist.images[currentImageIndex]} 
                                 alt={selectedArtist.name} 
                                 className="modal-image"
+                                onLoad={handleImageLoad}
                                 />
-                                {selectedArtist.images.length > 1 && (
-                                <button onClick={handlePrev}>«</button>
-                                )}
-                                {selectedArtist.images.length > 1 && (
-                                <button onClick={handleNext}>»</button>
-                                )}
+
                             </div>
+                           
+                            {selectedArtist.images.length > 1 && (
+                            <button onClick={handleNext}>»</button>
+                            )}
+
                         </div>
 
                         <div className="bio-section">

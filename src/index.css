@@ -202,6 +202,8 @@ img{
 .modal-image-wrapper {
   position: relative; 
   display: inline-block;
+  align-items: center;
+  justify-content: center;
   height: 60vh; 
 }
 
@@ -216,26 +218,77 @@ img{
 }
 
 
-.modal-image-wrapper button:first-of-type {
-  left: 5px;
-  font-size: 2.5rem;
+.modal-image-container button:first-of-type {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #961212;
+  z-index: 10;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+  left: -2rem; /* outside by default */
 }
 
-.modal-image-wrapper button:last-of-type {
-  right: 5px;
-  font-size: 2.5rem;
+.modal-image-container button:last-of-type {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #961212;
+  z-index: 10;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+  right: -2rem;
 }
+
+/* Style override for portrait mode */
+/* .modal-image-container.portrait button:first-of-type {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #961212;
+  z-index: 10;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+  left: -2rem;
+}
+.modal-image-container.portrait button:last-of-type {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #961212;
+  z-index: 10;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s;
+  right: -2rem;
+} */
 
 .bio-section {
   grid-column: 2;
   grid-row: 2;
   height: 40vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #961212 #ffffff; /* Thumb color, Track color */
+  scrollbar-color: #961212 #000000; /* Thumb color, Track color */
   color: black;
   text-align: left;
   font-size: 0.8em;
+  -webkit-overflow-scrolling: touch; /* iOS momentum scroll */
 }
 
 .bio-section p {
@@ -370,15 +423,19 @@ img{
   .modal-content {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr); /* 4 equal-height rows */
+    grid-template-rows: repeat(4, 1fr); 
     grid-template-areas:
       "selected-artist-name-container"
       "modal-image-wrapper"
       "bio-section"
       "modal-link-container";
-    height: 90vh; /* Force to fit screen */
-    gap: 0.3em;
-  }
+    height: 90vh; 
+    gap: 1em;
+  } 
+
+
+    /* grid-template-rows: 6vh 37vh 2vh 30vh 15vh; */
+
 
   .selected-artist-name-container{
     /* grid-row: 1/2; */
@@ -405,15 +462,14 @@ img{
     /* grid-row: 2/3; */
     object-fit: contain; /* or cover */
   }
-
-  
-  .modal-image-wrapper button:first-of-type {
-    font-size: 1.5rem;
+  .modal-image-container button:first-of-type {
+    left: 8rem; /* outside by default */
   }
   
-  .modal-image-wrapper button:last-of-type {
-    font-size: 1.5rem;
+  .modal-image-container button:last-of-type {
+    right: 8rem;
   }
+  
 
   .bio-section{
     grid-row: 3/4;
@@ -432,20 +488,69 @@ img{
     height: 25vh;
     font-size: 0.8rem;
   }
-
-  /* .modal-link{
-    margin-bottom: 2%;
-  } */
 }
-@media (max-height: 460px) {
+
+
+@media (max-width: 750px) {
+  .modal-image-container button:first-of-type {
+    left: 6rem; /* outside by default */
+  }
   
+  .modal-image-container button:last-of-type {
+    right: 6rem;
+  }
+  
+}
+@media (max-width: 690px) {
+  .modal-image-container button:first-of-type {
+    left: 4rem; /* outside by default */
+  }
+  
+  .modal-image-container button:last-of-type {
+    right: 4rem;
+  }  
+}
+@media (max-width: 630px) {
+  .modal-image-container button:first-of-type {
+    left: 2rem; /* outside by default */
+  }
+  
+  .modal-image-container button:last-of-type {
+    right: 2rem;
+  }  
+}
+@media (max-width: 510px) {
+  .modal-image-container button:first-of-type {
+    left: 1rem; /* outside by default */
+  }
+  
+  .modal-image-container button:last-of-type {
+    right: 1rem;
+  }  
+}
+@media (max-width: 510px) {
+  .modal-image-container button:first-of-type {
+    left: -1.6rem; /* outside by default */
+    font-size: 1.8rem;
+  }
+  
+  .modal-image-container button:last-of-type {
+    right: -1.6rem;
+    font-size: 1.8rem;
+  }  
 }
 
 @media (max-width: 460px) {
+  .modal-content { 
+    gap: 0.3em;
+  } 
+}
+
+@media (max-width: 430px) {
   .artist-container {
-      width: 85%;
-      grid-template-columns: repeat(1, 1fr); /* 1 column */
-      gap: 2rem;
+    width: 85%;
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    gap: 2rem;
   }
 
   .performance-line-1{
