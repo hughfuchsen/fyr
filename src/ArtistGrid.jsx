@@ -29,6 +29,15 @@ const ArtistGrid = () => {
         setIsPortrait(img.naturalHeight > img.naturalWidth);
     }
 
+    // preload the array of images
+    useEffect(() => {
+        if (selectedArtist && selectedArtist.images) {
+          selectedArtist.images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+          });
+        }
+      }, [selectedArtist]);
 
     const handleNext = () => {
         setCurrentImageIndex((prevIndex) =>

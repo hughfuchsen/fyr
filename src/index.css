@@ -9,6 +9,12 @@
 *::selection {
   background: #961212;
   color: rgb(255, 165, 92); /* Change text color */
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
