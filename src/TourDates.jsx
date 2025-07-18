@@ -51,61 +51,61 @@
 
 
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-const AIRTABLE_BASE_ID = process.env.REACT_APP_AIRTABLE_BASE_ID;
-const AIRTABLE_TABLE_NAME = process.env.REACT_APP_AIRTABLE_TOKEN;
-const AIRTABLE_TOKEN = process.env.REACT_APP_AIRTABLE_TOKEN;
+// const AIRTABLE_BASE_ID = process.env.REACT_APP_AIRTABLE_BASE_ID;
+// const AIRTABLE_TABLE_NAME = process.env.REACT_APP_AIRTABLE_TOKEN;
+// const AIRTABLE_TOKEN = process.env.REACT_APP_AIRTABLE_TOKEN;
 
-export default function TourDates() {
-  const [dates, setDates] = useState([]);
-  const [loading, setLoading] = useState(true);
+// export default function TourDates() {
+//   const [dates, setDates] = useState([]);
+//   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function fetchDates() {
-      try {
-        const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`, {
-            headers: {
-              Authorization: `Bearer ${AIRTABLE_TOKEN}`,
-            },
-          });
+//   useEffect(() => {
+//     async function fetchDates() {
+//       try {
+//         const response = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`, {
+//             headers: {
+//               Authorization: `Bearer ${AIRTABLE_TOKEN}`,
+//             },
+//           });
 
-        if (!response.ok) {
-          throw new Error(`Error fetching Airtable data: ${response.statusText}`);
-        }
+//         if (!response.ok) {
+//           throw new Error(`Error fetching Airtable data: ${response.statusText}`);
+//         }
 
-        const data = await response.json();
-        setDates(data.records || []);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-    }
+//         const data = await response.json();
+//         setDates(data.records || []);
+//       } catch (error) {
+//         console.error(error);
+//       } finally {
+//         setLoading(false);
+//       }
+//     }
 
-    fetchDates();
-  }, []);
+//     fetchDates();
+//   }, []);
 
-  if (loading) return <p>Loading tour dates...</p>;
+//   if (loading) return <p>Loading tour dates...</p>;
 
-  if (dates.length === 0) return <p>No upcoming tour dates.</p>;
+//   if (dates.length === 0) return <p>No upcoming tour dates.</p>;
 
-  return (
-    <div>
-      <h2>Upcoming Tour Dates</h2>
-      <ul>
-        {dates.map(({ id, fields }) => (
-          <li key={id}>
-            <strong>{fields["Artist Name"]}</strong> —{" "}
-            {new Date(fields["Tour Date"]).toLocaleDateString()} @ {fields.Venue}, {fields.City}{" "}
-            {fields["Ticket Link"] && (
-              <a href={fields["Ticket Link"]} target="_blank" rel="noopener noreferrer">
-                Tickets
-              </a>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h2>Upcoming Tour Dates</h2>
+//       <ul>
+//         {dates.map(({ id, fields }) => (
+//           <li key={id}>
+//             <strong>{fields["Artist Name"]}</strong> —{" "}
+//             {new Date(fields["Tour Date"]).toLocaleDateString()} @ {fields.Venue}, {fields.City}{" "}
+//             {fields["Ticket Link"] && (
+//               <a href={fields["Ticket Link"]} target="_blank" rel="noopener noreferrer">
+//                 Tickets
+//               </a>
+//             )}
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
