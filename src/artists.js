@@ -120,7 +120,7 @@ const artists = [
   //   website: "https://www.davedondero.com",
   //   productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
   // },
-  {
+  // {
   //   name: "Miscellaneous",
   //   images: ["/artist_image_wireframe.jpg"],
   //   bio: ``,
