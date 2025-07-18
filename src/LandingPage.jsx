@@ -44,8 +44,23 @@ export default function LandingPage() {
     };
   }, [expandedArtist]);
 
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 1200); // adjust duration to suit your content load time
+
+    return () => clearTimeout(timeout);
+}, []);
+
   return (
     <>
+      {isLoading && (
+      <div className="loading-overlay"></div>
+      )}
+
       {/* Hero Section */}
       <div className="landing-page-container" ref={backgroundRef}>
         <img className="background-image" src={backgroundImage} alt="Background" />
@@ -57,7 +72,7 @@ export default function LandingPage() {
       <p style={{fontSize:"1.5em", textAlign: "center", display: "block"}}>ARTISTS</p>
 
       <ArtistGrid setExpandedArtist={setExpandedArtist} />
-      
+
       <Footer/>
     </>
 
