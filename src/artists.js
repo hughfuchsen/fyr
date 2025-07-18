@@ -124,8 +124,8 @@ const artists = [
     name: "Miscellaneous",
     images: ["/artist_image_wireframe.jpg"],
     bio: ``,
-    website: "https://www.davedondero.com",
-    productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
+    website: "",
+    productLink: ""
   },
 ];
 
