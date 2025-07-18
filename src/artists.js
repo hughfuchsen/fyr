@@ -121,12 +121,12 @@ const artists = [
   //   productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
   // },
   {
-    name: "Miscellaneous",
-    images: ["/artist_image_wireframe.jpg"],
-    bio: ``,
-    website: "",
-    productLink: ""
-  },
+  //   name: "Miscellaneous",
+  //   images: ["/artist_image_wireframe.jpg"],
+  //   bio: ``,
+  //   website: "",
+  //   productLink: ""
+  // },
 ];
 
 export default artists;
