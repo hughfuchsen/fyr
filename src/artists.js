@@ -10,7 +10,7 @@ const artists = [
   },
   {
     name: "Shelley Short",
-    images: ["/shelley.jpg"],
+    images: ["/shelley.jpg", "/shelleyShort2.jpg", "/shelleyShort3.jpg", "/shelleyShort4.jpg"],
     bio: `Shelley Short is an American singer-songwriter known for her evocative blend of folk, alt-country, and acoustic music. Rooted in Portland, Oregon, she draws deep inspiration from landscapes like the desert, mountains, and especially the Oregon coast.
     \n\n
     Short’s music is marked by a warm, vulnerable voice, with lyrics that explore love, grief, resilience, and self-discovery. She blends classic folk traditions with modern textures, enriched by subtle instrumentation like pump organ and lap steel. As one bio puts it, she "transports listeners to the American heartland by conjuring up vivid images of love, grief, and the human experience”`,
