@@ -75,6 +75,17 @@ img{
   -webkit-user-drag: none; /* Stops dragging in Safari/Chrome */
 }
 
+.landing-page-artist-text{
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+.landing-page-artist-text.fade-out {
+  cursor: default;
+}
 
 .loading-overlay {
   position: fixed;
@@ -134,7 +145,7 @@ img{
 .artist-container {
   width: 90%;
   margin: 0 auto;
-  margin-top: 5em;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   gap: 2em;
@@ -322,7 +333,7 @@ img{
   height: 40vh;
   overflow-y: auto;
   scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #961212 #ffffff; /* Thumb color, Track color */
+  scrollbar-color: #961212 #f6f4f4; /* Thumb color, Track color */
   color: black;
   text-align: left;
   font-size: 0.8em;
@@ -591,19 +602,19 @@ img{
     width: 85%;
     grid-template-columns: repeat(1, 1fr); /* 1 column */
     gap: 2rem;
+    margin-top: 0;
   }
-
-  .performance-line-1{
+  /* .performance-line-1{
     display: block;
     opacity: 1;
     margin-top: 21em;
     margin-left: 3em;
     margin-right: 3em;
-  }
+  } */
 
-  .landing-page-container {
+  /* .landing-page-container {
     margin-top: 5em;
-  }
+  } */
 
   .footer-container{
     font-size: 0.7rem;

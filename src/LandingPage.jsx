@@ -8,7 +8,11 @@ export default function LandingPage() {
   const [expandedArtist, setExpandedArtist] = useState(null);
   const [backgroundImage, setBackgroundImage] = useState("/flippinYeahSign.jpg");
   const backgroundRef = useRef(null);
-  const lineRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showOverlay, setShowOverlay] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
+
+
 
   // Handle responsive background image
   useEffect(() => {
@@ -46,7 +50,6 @@ export default function LandingPage() {
   }, [expandedArtist]);
 
 
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -55,6 +58,32 @@ export default function LandingPage() {
 
     return () => clearTimeout(timeout);
 }, []);
+
+useEffect(() => {
+  function onScroll() {
+    if (window.scrollY > 40 && showOverlay && !fadeOut) {
+      // Trigger fade out animation once scrolled past 30px
+      setFadeOut(true);
+      setTimeout(() => {
+        setShowOverlay(false);
+        setFadeOut(false);
+      }, 500); // duration matches CSS transition
+    }
+  }
+
+  window.addEventListener('scroll', onScroll);
+  return () => window.removeEventListener('scroll', onScroll);
+}, [showOverlay, fadeOut]);
+
+
+function handleHideOverlay() {
+  setFadeOut(true);
+  // After animation duration, hide overlay completely
+  setTimeout(() => {
+    setShowOverlay(false);
+    setFadeOut(false);
+  }, 500); // match the CSS transition duration
+}
 
   return (
     <>
@@ -71,17 +100,38 @@ export default function LandingPage() {
         </div>
       )}
 
+
+
       {/* Hero Section */}
-      <div className="landing-page-container" ref={backgroundRef}>
-        <img className="background-image" src={backgroundImage} alt="Background" />
+      <div  className="landing-page-container" ref={backgroundRef}>
+        <img className="background-image" src={backgroundImage} style={{ position: 'relative', zIndex: 10 }} alt="Background" />
       </div>
 
-      <hr className="performance-line-1" ref={lineRef}/>
+      {/* <hr className="performance-line-1" ref={lineRef}/> */}
 
       {/* Artists Section */}
-      <p style={{fontSize:"1.5em", textAlign: "center", display: "block"}}>ARTISTS</p>
-
-      <ArtistGrid setExpandedArtist={setExpandedArtist} />
+      <p className={`landing-page-artist-text ${fadeOut ? 'fade-out' : ''}`}  onClick={() => handleHideOverlay()}>ARTISTS</p>
+      
+      {showOverlay && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            backgroundColor: fadeOut ? 'rgba(255,255,255,0)' : 'rgba(255,255,255,0.6)',
+            backdropFilter: fadeOut ? 'blur(0px)' : 'blur(8px)',
+            WebkitBackdropFilter: fadeOut ? 'blur(0px)' : 'blur(8px)',
+            transition: 'background-color 0.5s ease, backdrop-filter 0.5s ease',
+            zIndex: 1,
+            objectFit: 'contain',
+          }}
+          onClick={() => handleHideOverlay()}
+        />
+      
+      )}
+      <ArtistGrid style={{zIndex: -1,}} setExpandedArtist={setExpandedArtist} />
 
       {/* <TourDates/> */}
 

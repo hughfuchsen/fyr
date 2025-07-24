@@ -8,6 +8,7 @@ const ArtistGrid = () => {
     const [isBoxTemplateLoaded, setIsBoxTemplateLoaded] = useState(false);
     const [isPortrait, setIsPortrait] = useState(false);
 
+
     // Preload box-template image
     useEffect(() => {
         const img = new Image();
@@ -89,8 +90,8 @@ const ArtistGrid = () => {
 
 
     return (
-        
         <div className="artist-container">
+
             {artists.map((artist, index) => (
                 <div 
                     key={index} 
