@@ -120,7 +120,7 @@ function handleHideOverlay() {
             left: 0,
             width: '100vw',
             height: '100vh',
-            backgroundColor: fadeOut ? 'rgba(255,255,255,0)' : 'rgba(255,255,255,0.6)',
+            backgroundColor: fadeOut ? 'rgba(255,255,255,0)' : 'rgba(255,255,255,0.9)',
             backdropFilter: fadeOut ? 'blur(0px)' : 'blur(8px)',
             WebkitBackdropFilter: fadeOut ? 'blur(0px)' : 'blur(8px)',
             transition: 'background-color 0.5s ease, backdrop-filter 0.5s ease',
