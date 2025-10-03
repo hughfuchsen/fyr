@@ -55,7 +55,7 @@ const artists = [
     \n\n
     "Buluunarbi and The Old North Star" is this Roger’s first studio album in over 12 years and it’s also the first time in his 50 year career that he’s turned his hand to songwriting. Up until now Roger has been known as a master song interpreter but this album offers a collection of songs that talk of his own history, feelings and experience. For the past few years Roger has been working closely with songwriters Toby Martin, Jon Langford and Jason Walker to craft these stories that he’s carried with him his whole life. This album is very special in that it marks a new phase in the musical journey of one of Australia’s most important artists.`,
     website: "https://rogerknoxmusic.com",
-    productLink: "https://flippinyeahindustries.bigcartel.com/artist/david-dondero"
+    productLink: "https://flippinyeahindustries.bigcartel.com/artist/roger-knox"
   },
   {
     name: "Jonathan Richman",
